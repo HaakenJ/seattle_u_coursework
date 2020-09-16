@@ -20,6 +20,8 @@ class SandPile {
 public:
     /**
      * Set the values of each cell in this sand pile.
+     * 
+     * @precon all elements are 0 or greater
      * @param cells 1st row elements, then 2nd, etc. all
      * in one flat array
      */
@@ -55,7 +57,7 @@ private:
     /**
      * A helper function to return a vector of indexes that border the
      * passed in index in a 3x3 array.
-     * @param an integer index in a 3x3 array (0 - 8)
+     * @param a positive integer index in a 3x3 array (0 - 8)
      * @return a vector of integer indexes that border the passed index
      */
     std::vector<int> getBorders(const int index) const;
