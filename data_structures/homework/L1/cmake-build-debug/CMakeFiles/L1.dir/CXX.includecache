@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-D:/Haake/seattle_u/data_structures/homework/L1/SandPile.h
+D:/Haake/Documents/seattle_u_notes/data_structures/homework/L1/SandPile.h
 vector
 -
+string
+-
 
-D:/Haake/seattle_u/data_structures/homework/L1/main.cpp
+D:/Haake/Documents/seattle_u_notes/data_structures/homework/L1/main.cpp
 iostream
 -
 SandPile.h
-D:/Haake/seattle_u/data_structures/homework/L1/SandPile.h
+D:/Haake/Documents/seattle_u_notes/data_structures/homework/L1/SandPile.h
 

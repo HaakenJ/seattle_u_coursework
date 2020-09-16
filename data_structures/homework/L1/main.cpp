@@ -10,8 +10,9 @@ void print(std::vector <int> const &a) {
 
 int main() {
     SandPile sp;
-    print(sp.getBorders(3));
-    print(sp.getBorders(1));
-    print(sp.getBorders(4));
+    int pile[9] = {0, 0, 0, 0, 4, 0, 0, 0 ,0};
+    sp.setPile(pile);
+    sp.stabilize();
+    std::cout << sp.toString();
     return 0;
 }

@@ -6,12 +6,14 @@
 
 using namespace std;
 
+// Set the pile value
 void SandPile::setPile(const int *cells) {
     for (int i = 0; i < ARRAY_SIZE; ++i) {
         pile[i] = cells[i];
     }
 }
 
+// Check if the pile is stable
 bool SandPile::isStable() const {
     for (int i = 0; i < ARRAY_SIZE; ++i) {
         if (pile[i] > MAX_STABLE) return false;
@@ -19,6 +21,7 @@ bool SandPile::isStable() const {
     return true;
 }
 
+// Stabilize the pile
 void SandPile::stabilize() {
     int spillIndex;
     while (!isStable()) {
@@ -35,6 +38,20 @@ void SandPile::stabilize() {
     }
 }
 
+string SandPile::toString() const {
+    string result;
+    int count = 1;
+    for (int i = 0; i < ARRAY_SIZE; ++i) {
+        result = result + " " + to_string(pile[i]);
+        if (count == 3) {
+            result += " /";
+            count = 0;
+        }
+        else count++;
+    }
+}
+
+// Get a vector of the bordering elements to an index
  vector<int> SandPile::getBorders(const int index) const {
     // return a vector of the bordering indexes
     vector<int> borders;
@@ -85,6 +102,7 @@ void SandPile::stabilize() {
     }
 }
 
+// Get the index of an element that will spill
 int SandPile::getSpillElement() const {
     for (int i = 0; i < ARRAY_SIZE; ++i) {
         if (pile[i] > MAX_STABLE) return pile[i];

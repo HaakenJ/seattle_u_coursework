@@ -6,6 +6,7 @@
 #define L1_SANDPILE_H
 
 #include <vector>
+#include <string>
 
 /**
  * A class to model the functionality of a 3x3
@@ -46,7 +47,7 @@ public:
         * Get a string suitable for printing out.
         * @return a 3-line string with the contents of this sand pile.
         */
-//        std::string toString() const;
+        std::string toString() const;
 
 private:
     int pile[ARRAY_SIZE];

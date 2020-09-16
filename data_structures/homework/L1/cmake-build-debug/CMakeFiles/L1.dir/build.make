@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Haake\seattle_u\data_structures\homework\L1
+CMAKE_SOURCE_DIR = D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Haake\seattle_u\data_structures\homework\L1\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/L1.dir/depend.make
@@ -78,29 +78,29 @@ include CMakeFiles/L1.dir/flags.make
 
 CMakeFiles/L1.dir/main.cpp.obj: CMakeFiles/L1.dir/flags.make
 CMakeFiles/L1.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\seattle_u\data_structures\homework\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/L1.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L1.dir\main.cpp.obj -c D:\Haake\seattle_u\data_structures\homework\L1\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/L1.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L1.dir\main.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp
 
 CMakeFiles/L1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/L1.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\seattle_u\data_structures\homework\L1\main.cpp > CMakeFiles\L1.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp > CMakeFiles\L1.dir\main.cpp.i
 
 CMakeFiles/L1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/L1.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\seattle_u\data_structures\homework\L1\main.cpp -o CMakeFiles\L1.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp -o CMakeFiles\L1.dir\main.cpp.s
 
 CMakeFiles/L1.dir/SandPile.cpp.obj: CMakeFiles/L1.dir/flags.make
 CMakeFiles/L1.dir/SandPile.cpp.obj: ../SandPile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\seattle_u\data_structures\homework\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/L1.dir/SandPile.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L1.dir\SandPile.cpp.obj -c D:\Haake\seattle_u\data_structures\homework\L1\SandPile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/L1.dir/SandPile.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L1.dir\SandPile.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\SandPile.cpp
 
 CMakeFiles/L1.dir/SandPile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/L1.dir/SandPile.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\seattle_u\data_structures\homework\L1\SandPile.cpp > CMakeFiles\L1.dir\SandPile.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\SandPile.cpp > CMakeFiles\L1.dir\SandPile.cpp.i
 
 CMakeFiles/L1.dir/SandPile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/L1.dir/SandPile.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\seattle_u\data_structures\homework\L1\SandPile.cpp -o CMakeFiles\L1.dir\SandPile.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\SandPile.cpp -o CMakeFiles\L1.dir\SandPile.cpp.s
 
 # Object files for target L1
 L1_OBJECTS = \
@@ -116,7 +116,7 @@ L1.exe: CMakeFiles/L1.dir/build.make
 L1.exe: CMakeFiles/L1.dir/linklibs.rsp
 L1.exe: CMakeFiles/L1.dir/objects1.rsp
 L1.exe: CMakeFiles/L1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Haake\seattle_u\data_structures\homework\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable L1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable L1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\L1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -129,6 +129,6 @@ CMakeFiles/L1.dir/clean:
 .PHONY : CMakeFiles/L1.dir/clean
 
 CMakeFiles/L1.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Haake\seattle_u\data_structures\homework\L1 D:\Haake\seattle_u\data_structures\homework\L1 D:\Haake\seattle_u\data_structures\homework\L1\cmake-build-debug D:\Haake\seattle_u\data_structures\homework\L1\cmake-build-debug D:\Haake\seattle_u\data_structures\homework\L1\cmake-build-debug\CMakeFiles\L1.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1 D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1 D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\cmake-build-debug D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\cmake-build-debug D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\cmake-build-debug\CMakeFiles\L1.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/L1.dir/depend
 
