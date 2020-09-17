@@ -79,28 +79,28 @@ include CMakeFiles/L1.dir/flags.make
 CMakeFiles/L1.dir/main.cpp.obj: CMakeFiles/L1.dir/flags.make
 CMakeFiles/L1.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/L1.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L1.dir\main.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L1.dir\main.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp
 
 CMakeFiles/L1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/L1.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp > CMakeFiles\L1.dir\main.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp > CMakeFiles\L1.dir\main.cpp.i
 
 CMakeFiles/L1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/L1.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp -o CMakeFiles\L1.dir\main.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp -o CMakeFiles\L1.dir\main.cpp.s
 
 CMakeFiles/L1.dir/SandPile.cpp.obj: CMakeFiles/L1.dir/flags.make
 CMakeFiles/L1.dir/SandPile.cpp.obj: ../SandPile.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/L1.dir/SandPile.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L1.dir\SandPile.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\SandPile.cpp
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L1.dir\SandPile.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\SandPile.cpp
 
 CMakeFiles/L1.dir/SandPile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/L1.dir/SandPile.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\SandPile.cpp > CMakeFiles\L1.dir\SandPile.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\SandPile.cpp > CMakeFiles\L1.dir\SandPile.cpp.i
 
 CMakeFiles/L1.dir/SandPile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/L1.dir/SandPile.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\SandPile.cpp -o CMakeFiles\L1.dir\SandPile.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\SandPile.cpp -o CMakeFiles\L1.dir\SandPile.cpp.s
 
 # Object files for target L1
 L1_OBJECTS = \
