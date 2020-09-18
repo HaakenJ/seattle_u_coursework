@@ -1,0 +1,79 @@
+#include <iostream>
+
+using namespace std;
+
+double *demoPointers();
+
+double *demoNew(int size);
+
+struct ThreePoint {
+    double x, y, z;
+};
+
+int main() {
+    double *mydptr;
+    mydptr = demoPointers();
+    cout << "In main, mydptr: " << mydptr << " whose value is " << *mydptr << " OOPS!" << endl;
+    mydptr = demoNew(10);
+    for (int i = 0; i < 10; i++)
+        cout << mydptr[i] << " ";
+    cout << endl;
+    delete[] mydptr;  // matches the new in demoNew
+
+    ThreePoint a;
+    cout << "uninitialized: " << a.x << ", " << a.y << ", " << a.z << endl;
+    a.x = a.y = a.z = 0.0;
+    cout << "set to zero: " << a.x << ", " << a.y << ", " << a.z << endl;
+
+    ThreePoint *b;
+    b = &a;
+    b->z = -1.0;
+    b->y = +1.0;
+    b->x = b->y;
+    cout << "through b: " << b->x << ", " << b->y << ", " << b->z << endl;
+    cout << "a directly: " << a.x << ", " << a.y << ", " << a.z << endl;
+
+    return 0;
+}
+
+double *demoNew(int size) {
+    double *xPtr = new double[size];
+    for (int i = 0; i < size; i++)
+        xPtr[i] = i * i;   // another kind of dereference, but at an offset
+    return xPtr;  // This is ok, BUT, my caller is responsible for freeing it once they're done with it
+}
+
+double *demoPointers() {
+    double x = 2.5, y = 5.9;
+    y += 1.0;
+    cout << "Where are local variables x and y?" << endl;
+    cout << "x: " << x << " is at " << &x << endl;  // & is "address-of" operator
+    cout << "y: " << y << " is at " << &y << endl;
+
+    double *xPtr;
+    xPtr = &x;
+    *xPtr += 5.4;  // *pointer is a dereference -- use the thing I'm pointing to.
+    cout << "after changing x with a pointer dereference" << endl;
+    cout << "x: " << x << " is at " << &x << endl;  // & is "address-of" operator
+    cout << "y: " << y << " is at " << &y << endl;
+
+    double *another;
+    another = &y;
+    *another = 0.0;
+    another = xPtr;
+    *another = -2.3e15;
+    cout << *another << endl;
+    cout << "x: " << x << " is at " << another << endl;  // & is "address-of" operator
+    cout << "y: " << y << " is at " << &y << endl;
+
+    double a[] = { 3.4, 7.8, -1.1};
+    cout << "What is a? " << a << endl;
+    cout << "What is &a? " << &a << endl;
+    cout << "Where is a[0]? " << &a[0] << endl;
+    cout << "Where is a[1]? " << &a[1] << endl;
+    cout << "Where is a[2]? " << &a[2] << endl;
+
+    // DO NOT DO THIS! Why?
+    // That place, x, is no longer ours after we return!!
+    return a;
+}

@@ -7,7 +7,11 @@
 
 
 class Member {
-
+public:
+private:
+    string name;
+    int account;
+    bool loggedIn;
 };
 
 

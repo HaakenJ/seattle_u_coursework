@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\IntList.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\ar.exe cr CMakeFiles\IntList.dir/objects.a @CMakeFiles\IntList.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\IntList.dir/objects.a -Wl,--no-whole-archive  -o IntList.exe -Wl,--out-implib,libIntList.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\IntList.dir\linklibs.rsp

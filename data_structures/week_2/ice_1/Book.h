@@ -7,7 +7,13 @@
 
 
 class Book {
+public:
 
+private:
+    int ISBN;
+    string author;
+    string title;
+    string year;
 };
 
 

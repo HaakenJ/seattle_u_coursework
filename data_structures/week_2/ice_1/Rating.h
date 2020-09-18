@@ -7,7 +7,11 @@
 
 
 class Rating {
-
+public:
+private:
+    string bookTitle;
+    string memberName;
+    int rating;
 };
 
 
