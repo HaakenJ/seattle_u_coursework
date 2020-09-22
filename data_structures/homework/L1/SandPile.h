@@ -18,6 +18,41 @@ class SandPile {
 public:
     static const int DIM = 3;
     static const int MAX_STABLE = 3;
+
+    /**
+     * Default ctor.  This creates a 'zero' sandpile
+     */
+    SandPile();
+
+    /**
+     * Single argument ctor
+     * @precon the array of ints has no negative values, and is of length
+     * ARRAY_SIZE
+     * @param a pointer to a flat array of ints
+     */
+    SandPile(const int *pile);
+
+    /**
+     * destructor for pile
+     */
+    ~SandPile();
+
+    /** 
+     * Add in the cells of another sand pile into this one and restabilize.
+     * I.e., implements: this = this + other, and then stabilize.
+     * @param other addend sandpile
+     */
+    void addPile(const SandPile &other);
+
+    /**
+     * Check if this sand pile is in the abelian group explained by 
+     * Dr. Garcia-Puente
+     * @return true if it is in the group (i.e. this + zero == this), false 
+     * otherwise
+     */
+    bool isInGroup() const;
+
+
     /**
      * Set the values of each cell in this sand pile.
      * 
@@ -53,7 +88,7 @@ public:
 
 private:
     static const int ARRAY_SIZE = DIM * DIM;  // size of flat array
-    int pile[ARRAY_SIZE];
+    int *pile;
 
     static int index(int row, int col);  // helper to map from r,c --> index into flat array
 };
