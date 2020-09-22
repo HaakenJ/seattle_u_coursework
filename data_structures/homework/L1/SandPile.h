@@ -6,7 +6,7 @@
 #ifndef L1_SANDPILE_H
 #define L1_SANDPILE_H
 
-#include <vector>
+#include <iostream>
 #include <string>
 
 /**
@@ -14,11 +14,10 @@
  * abelian sand pile.
  */
 
-const int ARRAY_SIZE = 9;
-const int MAX_STABLE = 3;
-
 class SandPile {
 public:
+    static const int DIM = 3;
+    static const int MAX_STABLE = 3;
     /**
      * Set the values of each cell in this sand pile.
      * 
@@ -53,23 +52,10 @@ public:
     std::string toString() const;
 
 private:
+    static const int ARRAY_SIZE = DIM * DIM;  // size of flat array
     int pile[ARRAY_SIZE];
 
-    /**
-     * A helper function to return a vector of indexes that border the
-     * passed in index in a 3x3 array.
-     * @param a positive integer index in a 3x3 array (0 - 8)
-     * @return a vector of integer indexes that border the passed index
-     */
-    std::vector<int> getBorders(const int index) const;
-
-    /**
-     * A helper function to find and return the index of an element
-     * in the pile with a size more than MAX_STABLE.
-     * @return index of the first element in the pile that is over the
-     * MAX_STABLE size. -1 if no element is found
-     */
-    int getSpillElement() const;
+    static int index(int row, int col);  // helper to map from r,c --> index into flat array
 };
 
 
