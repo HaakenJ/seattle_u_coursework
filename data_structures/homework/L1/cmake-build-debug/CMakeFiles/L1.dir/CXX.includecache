@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/L1/SandPile.h
+iostream
+-
+string
+-
+
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/L1/main.cpp
+iostream
+-
+SandPile.h
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/L1/SandPile.h
+

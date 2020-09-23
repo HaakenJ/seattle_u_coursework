@@ -40,12 +40,12 @@ public:
     /**
      * Copy ctor for sandpile
      */
-     SandPile(const SandPile &sp);
+     //SandPile(const SandPile &sp);
 
      /**
       * Assignment overloader
       */
-     SandPile & operator=(const SandPile &sp);
+     //SandPile & operator=(const SandPile &sp);
 
     /** 
      * Add in the cells of another sand pile into this one and restabilize.

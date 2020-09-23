@@ -27,14 +27,14 @@ SandPile::~SandPile() {
 }
 
 // Copy ctor
-SandPile::SandPile(const SandPile &sp) {};
+//SandPile::SandPile(const SandPile &sp) {};
 
 // Assignment overload
-SandPile & SandPile::operator=(const SandPile &sp) {};
+//SandPile & SandPile::operator=(const SandPile &sp) {};
 
 // Add a sandpile to this one
 void SandPile::addPile(const SandPile &other) {
-    int *otherPile = other.getPile();
+    const int *otherPile = other.getPile();
     for (int i = 0; i < ARRAY_SIZE; i++) {
         pile[i] += otherPile[i];
     }
@@ -110,20 +110,12 @@ void SandPile::stabilize() {
 
 // Convert the pile to a formatted string for output
 string SandPile::toString() const {
-    // Create an output string stream
-    std::ostringstream os;
-    int count = 1;
-    for (int i: pile) {
-        // Add the current pile element onto the stream along with a space
-        // Add a forward-slash every three elements
-        os << i;
-        os << " ";
-        if (count % 3 == 0 && count != ARRAY_SIZE) os << "/ ";
-        count++;
+    ostringstream buffer;
+    for (int row = 0; row < DIM; row++) {
+        buffer << pile[index(row, 0)] << " " << pile[index(row, 1)] << " " << pile[index(row, 2)]
+               << (row == DIM - 1 ? "" : " / ");
     }
-    // Get the content from the output stream and return it as a string
-    std::string str(os.str());
-    return str;
+    return buffer.str();
 }
 
 int SandPile::index(int row, int col) {
