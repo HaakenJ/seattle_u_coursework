@@ -30,12 +30,22 @@ public:
      * ARRAY_SIZE
      * @param a pointer to a flat array of ints
      */
-    SandPile(const int *pile);
+    SandPile(const int *cells);
 
     /**
-     * destructor for pile
+     * destructor for sandpile
      */
     ~SandPile();
+
+    /**
+     * Copy ctor for sandpile
+     */
+     SandPile(const SandPile &sp);
+
+     /**
+      * Assignment overloader
+      */
+     SandPile & operator=(const SandPile &sp);
 
     /** 
      * Add in the cells of another sand pile into this one and restabilize.
@@ -61,6 +71,12 @@ public:
      * in one flat array
      */
     void setPile(const int *cells);
+
+    /**
+     * Gets a pointer to the pile stored in this SandPile
+     * @return pointer to this pile
+     */
+     const int * getPile() const;
 
     /**
      * Is this sand pile stable or will it topple?

@@ -8,6 +8,62 @@
 
 using namespace std;
 
+// Default ctor that sets pile to zero element
+SandPile::SandPile() {
+    pile = new int[ARRAY_SIZE];
+    int zeroPile[] = {2, 1, 2, 1, 0, 1, 2, 1, 2};
+    setPile(zeroPile);
+}
+
+// Single arg ctor
+SandPile::SandPile(const int *cells) {
+    pile = new int[ARRAY_SIZE];
+    setPile(cells);
+}
+
+// Destructor
+SandPile::~SandPile() {
+    delete [] pile;
+}
+
+// Copy ctor
+SandPile::SandPile(const SandPile &sp) {};
+
+// Assignment overload
+SandPile & SandPile::operator=(const SandPile &sp) {};
+
+// Add a sandpile to this one
+void SandPile::addPile(const SandPile &other) {
+    int *otherPile = other.getPile();
+    for (int i = 0; i < ARRAY_SIZE; i++) {
+        pile[i] += otherPile[i];
+    }
+    // No need to run stabilize if the pile is already stable
+    if (!isStable()) stabilize();
+}
+
+// Determine if sandpile is in abelian group
+bool SandPile::isInGroup() const {
+    int copy[ARRAY_SIZE];
+    // Make a copy of the current pile for determining change after adding
+    for (int i = 0; i < ARRAY_SIZE; i++) {
+        copy[i] = pile[i];
+    }
+
+    SandPile zeroPile;
+    SandPile copyPile(copy);
+
+    // Add the copied pile and the zero pile
+    copyPile.addPile(zeroPile);
+
+    // Determine if the copied pile, added with zero, is equal to this pile
+    const int* resultPile = copyPile.getPile();
+    for (int i = 0; i < ARRAY_SIZE; i++) {
+        if (resultPile[i] != pile[i]) return false;
+    }
+    return true;
+}
+
 // Set the pile value
 void SandPile::setPile(const int *cells) {
     for (int i = 0; i < ARRAY_SIZE; i++) {
@@ -17,6 +73,10 @@ void SandPile::setPile(const int *cells) {
     for (int i = 0; i < ARRAY_SIZE; ++i) {
         pile[i] = cells[i];
     }
+}
+
+const int * SandPile::getPile() const {
+    return pile;
 }
 
 // Check if the pile is stable (i.e. if all elements are below MAX_STABLE)
