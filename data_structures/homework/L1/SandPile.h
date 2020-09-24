@@ -62,7 +62,6 @@ public:
      */
     bool isInGroup() const;
 
-
     /**
      * Set the values of each cell in this sand pile.
      * 
