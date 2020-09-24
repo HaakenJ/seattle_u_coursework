@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/L1.dir/SandPile.cpp.obj"
-  "CMakeFiles/L1.dir/main.cpp.obj"
+  "CMakeFiles/L1.dir/p1_test.cpp.obj"
   "L1.exe"
   "L1.exe.manifest"
   "L1.pdb"

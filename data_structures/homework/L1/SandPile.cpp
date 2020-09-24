@@ -34,9 +34,8 @@ SandPile::~SandPile() {
 
 // Add a sandpile to this one
 void SandPile::addPile(const SandPile &other) {
-    const int *otherPile = other.getPile();
     for (int i = 0; i < ARRAY_SIZE; i++) {
-        pile[i] += otherPile[i];
+        pile[i] += other.pile[i];
     }
     // No need to run stabilize if the pile is already stable
     if (!isStable()) stabilize();
@@ -57,14 +56,14 @@ bool SandPile::isInGroup() const {
     copyPile.addPile(zeroPile);
 
     // Determine if the copied pile, added with zero, is equal to this pile
-    const int* resultPile = copyPile.getPile();
     for (int i = 0; i < ARRAY_SIZE; i++) {
-        if (resultPile[i] != pile[i]) return false;
+        if (copyPile.pile[i] != pile[i]) return false;
     }
     return true;
 }
 
 // Set the pile value
+// ***Added loop to test for negative values from L1 solution
 void SandPile::setPile(const int *cells) {
     for (int i = 0; i < ARRAY_SIZE; i++) {
         if (cells[i] < 0)
@@ -73,10 +72,6 @@ void SandPile::setPile(const int *cells) {
     for (int i = 0; i < ARRAY_SIZE; ++i) {
         pile[i] = cells[i];
     }
-}
-
-const int * SandPile::getPile() const {
-    return pile;
 }
 
 // Check if the pile is stable (i.e. if all elements are below MAX_STABLE)
@@ -88,6 +83,7 @@ bool SandPile::isStable() const {
 }
 
 // Stabilize the pile (i.e. topple all elements greater than MAX_STABLE)
+// *** This implementation is from L1 solution
 void SandPile::stabilize() {
     while (!isStable()) {
         for (int i = 0; i < ARRAY_SIZE; i++) {
@@ -109,6 +105,7 @@ void SandPile::stabilize() {
 }
 
 // Convert the pile to a formatted string for output
+// *** This implementation is from L1 solution
 string SandPile::toString() const {
     ostringstream buffer;
     for (int row = 0; row < DIM; row++) {
@@ -118,6 +115,8 @@ string SandPile::toString() const {
     return buffer.str();
 }
 
+// Return the index in a flat array given the indexes in a 2D array
+// *** Implementation is from L1 solution
 int SandPile::index(int row, int col) {
     return row * DIM + col;
 }

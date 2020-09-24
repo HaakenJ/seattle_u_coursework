@@ -3,7 +3,6 @@
 // CPSC 5910 03 20FQ Data Structures
 //
 
-#include <iostream>
 #include "SandPile.h"
 
 using namespace std;
@@ -13,7 +12,7 @@ using namespace std;
  * @param title the title of the test
  * @param args starting elements of the sandpile
 **/
-void testStabilize(const string title, const int *args) {
+void testStabilize(const string &title, const int *args) {
     SandPile test;
     test.setPile(args);
     cout << title << " before stabilization: " << test.toString();
@@ -21,7 +20,7 @@ void testStabilize(const string title, const int *args) {
     cout << " after: " << test.toString() << endl;
 }
 
-void testAdd(const string title, const int *argA, const int *argB) {
+void testAdd(const string &title, const int *argA, const int *argB) {
     SandPile testA(argA);
     SandPile testB(argB);
     cout << title << " a: " << testA.toString();
@@ -31,7 +30,7 @@ void testAdd(const string title, const int *argA, const int *argB) {
     cout << "   a + b: " << testA.toString() << endl;
 }
 
-void testIsInGroup(const string title, const int *args) {
+void testIsInGroup(const string &title, const int *args) {
     SandPile test(args);
     string result;
     test.isInGroup() == 1 ? result = "in group": result = "not in group";
@@ -39,9 +38,38 @@ void testIsInGroup(const string title, const int *args) {
     cout << result << endl;
 }
 
-// Count the total amount of piles in the abelian group
-int countAbelian() {
-    int total = 0;
+/**
+ * Recursive helper for counting sandpiles in the abelian group.
+ * @param args      DIM*DIM-element array to construct a SandPile
+ * @param remaining number of elements not yet set in args
+ * @param inGroup   accumulates additional SandPiles found in the group (pass by reference)
+ * @param inTotal   accumulates total number of SandPiles checked (pass by reference)
+ */
+void countGroupRec(int *args, int remaining, int &inGroup, int &inTotal) {
+    int n = SandPile::DIM * SandPile::DIM;
+    if (remaining == n) {
+        SandPile test(args);
+        if (test.isInGroup()) inGroup++;
+        inTotal++;
+    }
+    else {
+        for (int i = 0; i <= SandPile::DIM; i++) {
+            args[remaining] = i;
+            countGroupRec(args, remaining + 1, inGroup, inTotal);
+            args[remaining] = i;
+        }
+    }
+}
+
+/** Count the total amount of piles in the abelian group and total tested
+ * piles. Returns either total abelian piles or total tested piles based
+ * on boolean flag.  (True returns abelian)
+ * @param bool flag true to return abelian piles, false to return total piles
+ * @return either total piles in abelian group or total piles tested
+ */
+int countPiles(bool abelianFlag) {
+    int totalAbelian = 0;
+    int totalTested = 0;
 
     for (int i0 = 0; i0 <= SandPile::MAX_STABLE; i0++) {
         for (int i1 = 0; i1 <= SandPile::MAX_STABLE; i1++) {
@@ -54,7 +82,8 @@ int countAbelian() {
                                     for (int i8 = 0; i8 <= SandPile::MAX_STABLE; i8++) {
                                         int pile[] = {i0, i1, i2, i3, i4, i5, i6, i7, i8};
                                         SandPile sp(pile);
-                                        if (sp.isInGroup()) total++;
+                                        if (sp.isInGroup()) totalAbelian++;
+                                        totalTested++;
                                     }
                                 }
                             }
@@ -64,7 +93,7 @@ int countAbelian() {
             }
         }
     }
-    return total;
+    return abelianFlag ? totalAbelian : totalTested;
 }
 
 int main() {
@@ -127,10 +156,18 @@ int main() {
     testIsInGroup("all 3's", groupTest4);
 
     cout << endl;
-    cout << "sand piles in group: " << countAbelian() << endl;
-    // Not sure if we wanted the total possible hard-coded or not
-    // It seems logical to do so because we know the possible and can compare
-    // results against it.
-    cout << "out of total 3x3 sand piles: 262144" << endl;
+    cout << "Iterative Abelian Group Tests: " << endl;
+    cout << "sand piles in group: " << countPiles(true) << endl;
+    cout << "out of total 3x3 sand piles: " << countPiles(false) << endl;
+
+    cout << endl;
+    cout << "Recursive Abelian Group Tests: " << endl;
+    int args[] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+    int inGroup = 0;
+    int inTotal = 0;
+    countGroupRec(args, 0, inGroup, inTotal);
+    cout << "sand piles in group: " << inGroup << endl;
+    cout << "out of total 3x3 sand piles: " << inTotal << endl;
+    
     return 0;
 }

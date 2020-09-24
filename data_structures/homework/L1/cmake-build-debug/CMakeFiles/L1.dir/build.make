@@ -76,18 +76,18 @@ include CMakeFiles/L1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/L1.dir/flags.make
 
-CMakeFiles/L1.dir/main.cpp.obj: CMakeFiles/L1.dir/flags.make
-CMakeFiles/L1.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/L1.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L1.dir\main.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp
+CMakeFiles/L1.dir/p1_test.cpp.obj: CMakeFiles/L1.dir/flags.make
+CMakeFiles/L1.dir/p1_test.cpp.obj: ../p1_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/L1.dir/p1_test.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L1.dir\p1_test.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\p1_test.cpp
 
-CMakeFiles/L1.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/L1.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp > CMakeFiles\L1.dir\main.cpp.i
+CMakeFiles/L1.dir/p1_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/L1.dir/p1_test.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\p1_test.cpp > CMakeFiles\L1.dir\p1_test.cpp.i
 
-CMakeFiles/L1.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/L1.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\main.cpp -o CMakeFiles\L1.dir\main.cpp.s
+CMakeFiles/L1.dir/p1_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/L1.dir/p1_test.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L1\p1_test.cpp -o CMakeFiles\L1.dir\p1_test.cpp.s
 
 CMakeFiles/L1.dir/SandPile.cpp.obj: CMakeFiles/L1.dir/flags.make
 CMakeFiles/L1.dir/SandPile.cpp.obj: ../SandPile.cpp
@@ -104,13 +104,13 @@ CMakeFiles/L1.dir/SandPile.cpp.s: cmake_force
 
 # Object files for target L1
 L1_OBJECTS = \
-"CMakeFiles/L1.dir/main.cpp.obj" \
+"CMakeFiles/L1.dir/p1_test.cpp.obj" \
 "CMakeFiles/L1.dir/SandPile.cpp.obj"
 
 # External object files for target L1
 L1_EXTERNAL_OBJECTS =
 
-L1.exe: CMakeFiles/L1.dir/main.cpp.obj
+L1.exe: CMakeFiles/L1.dir/p1_test.cpp.obj
 L1.exe: CMakeFiles/L1.dir/SandPile.cpp.obj
 L1.exe: CMakeFiles/L1.dir/build.make
 L1.exe: CMakeFiles/L1.dir/linklibs.rsp

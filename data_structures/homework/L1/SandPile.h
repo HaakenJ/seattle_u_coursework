@@ -7,7 +7,6 @@
 #define L1_SANDPILE_H
 
 #include <iostream>
-#include <string>
 
 /**
  * A class to model the functionality of a 3x3
@@ -70,12 +69,6 @@ public:
      * in one flat array
      */
     void setPile(const int *cells);
-
-    /**
-     * Gets a pointer to the pile stored in this SandPile
-     * @return pointer to this pile
-     */
-     const int * getPile() const;
 
     /**
      * Is this sand pile stable or will it topple?

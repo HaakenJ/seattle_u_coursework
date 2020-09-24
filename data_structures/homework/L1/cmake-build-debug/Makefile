@@ -169,32 +169,32 @@ SandPile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\L1.dir\build.make CMakeFiles/L1.dir/SandPile.cpp.s
 .PHONY : SandPile.cpp.s
 
-main.obj: main.cpp.obj
+p1_test.obj: p1_test.cpp.obj
 
-.PHONY : main.obj
+.PHONY : p1_test.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L1.dir\build.make CMakeFiles/L1.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+p1_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L1.dir\build.make CMakeFiles/L1.dir/p1_test.cpp.obj
+.PHONY : p1_test.cpp.obj
 
-main.i: main.cpp.i
+p1_test.i: p1_test.cpp.i
 
-.PHONY : main.i
+.PHONY : p1_test.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L1.dir\build.make CMakeFiles/L1.dir/main.cpp.i
-.PHONY : main.cpp.i
+p1_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L1.dir\build.make CMakeFiles/L1.dir/p1_test.cpp.i
+.PHONY : p1_test.cpp.i
 
-main.s: main.cpp.s
+p1_test.s: p1_test.cpp.s
 
-.PHONY : main.s
+.PHONY : p1_test.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L1.dir\build.make CMakeFiles/L1.dir/main.cpp.s
-.PHONY : main.cpp.s
+p1_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L1.dir\build.make CMakeFiles/L1.dir/p1_test.cpp.s
+.PHONY : p1_test.cpp.s
 
 # Help Target
 help:
@@ -208,9 +208,9 @@ help:
 	@echo ... SandPile.obj
 	@echo ... SandPile.i
 	@echo ... SandPile.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... p1_test.obj
+	@echo ... p1_test.i
+	@echo ... p1_test.s
 .PHONY : help
 
 

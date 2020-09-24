@@ -4,6 +4,6 @@
 CMakeFiles/L1.dir/SandPile.cpp.obj: ../SandPile.cpp
 CMakeFiles/L1.dir/SandPile.cpp.obj: ../SandPile.h
 
-CMakeFiles/L1.dir/main.cpp.obj: ../SandPile.h
-CMakeFiles/L1.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/L1.dir/p1_test.cpp.obj: ../SandPile.h
+CMakeFiles/L1.dir/p1_test.cpp.obj: ../p1_test.cpp
 
