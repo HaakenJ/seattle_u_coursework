@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Haake/Documents/seattle_u_notes/data_structures/homework/L1/SandPile.h
+iostream
+-
+
+D:/Haake/Documents/seattle_u_notes/data_structures/homework/L1/p1_test.cpp
+SandPile.h
+D:/Haake/Documents/seattle_u_notes/data_structures/homework/L1/SandPile.h
+
