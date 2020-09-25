@@ -33,9 +33,9 @@ void testAdd(const string &title, const int *argA, const int *argB) {
 void testIsInGroup(const string &title, const int *args) {
     SandPile test(args);
     string result;
-    test.isInGroup() == 1 ? result = "in group": result = "not in group";
+    test.isInGroup() == 1 ? result = "in group" : result = "not in group";
     cout << title << " + zero: " << test.toString() << " is ";
-    cout << result << endl;
+    cout << result;
 }
 
 /**
@@ -51,8 +51,7 @@ void countGroupRec(int *args, int remaining, int &inGroup, int &inTotal) {
         SandPile test(args);
         if (test.isInGroup()) inGroup++;
         inTotal++;
-    }
-    else {
+    } else {
         for (int i = 0; i <= SandPile::DIM; i++) {
             args[remaining] = i;
             countGroupRec(args, remaining + 1, inGroup, inTotal);
@@ -145,15 +144,19 @@ int main() {
 
     int groupTest1[9] = {3, 3, 3, 3, 3, 3, 3, 3, 3};
     testIsInGroup("all 3's", groupTest1);
+    cout << " (expect in group)" << endl;
 
     int groupTest2[9] = {2, 2, 2, 2, 2, 2, 2, 2, 2};
     testIsInGroup("all 2's", groupTest2);
+    cout << " (expect in group)" << endl;
 
     int groupTest3[9] = {3, 2, 2, 2, 1, 1, 3, 3, 3};
     testIsInGroup("all 3's", groupTest3);
+    cout << " (expect in group)" << endl;
 
     int groupTest4[9] = {1, 1, 1, 1, 1, 1, 1, 1, 1};
     testIsInGroup("all 3's", groupTest4);
+    cout << " (expect not in group)" << endl;
 
     cout << endl;
     cout << "Iterative Abelian Group Tests: " << endl;
@@ -168,6 +171,6 @@ int main() {
     countGroupRec(args, 0, inGroup, inTotal);
     cout << "sand piles in group: " << inGroup << endl;
     cout << "out of total 3x3 sand piles: " << inTotal << endl;
-    
+
     return 0;
 }

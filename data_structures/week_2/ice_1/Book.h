@@ -5,15 +5,19 @@
 #ifndef ICE_1_BOOK_H
 #define ICE_1_BOOK_H
 
+#include <iostream>
 
 class Book {
 public:
+    Book();
+    Book(std::string &ISBN, std::string &author,
+                 std::string &title, std::string &year);
 
 private:
-    int ISBN;
-    string author;
-    string title;
-    string year;
+    std::string ISBN;
+    std::string author;
+    std::string title;
+    std::string year;
 };
 
 

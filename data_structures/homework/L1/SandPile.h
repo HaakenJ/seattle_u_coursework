@@ -29,7 +29,7 @@ public:
      * ARRAY_SIZE
      * @param a pointer to a flat array of ints
      */
-    SandPile(const int *cells);
+    explicit SandPile(const int *cells);
 
     /**
      * destructor for sandpile
@@ -39,12 +39,12 @@ public:
     /**
      * Copy ctor for sandpile
      */
-     //SandPile(const SandPile &sp);
+    SandPile(const SandPile &rhs);
 
-     /**
-      * Assignment overloader
-      */
-     //SandPile & operator=(const SandPile &sp);
+    /**
+     * Assignment overloader
+     */
+    SandPile &operator=(const SandPile &rhs);
 
     /** 
      * Add in the cells of another sand pile into this one and restabilize.
@@ -101,5 +101,6 @@ private:
     static int index(int row, int col);  // helper to map from r,c --> index into flat array
 };
 
+#include "SandPile.cpp"
 
 #endif //L1_SANDPILE_H

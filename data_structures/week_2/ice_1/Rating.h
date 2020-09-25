@@ -6,12 +6,16 @@
 #define ICE_1_RATING_H
 
 
+#include "Book.h"
+
 class Rating {
 public:
+    Rating();
+    Rating(int rating, std::string poster, Book book);
 private:
-    string bookTitle;
-    string memberName;
     int rating;
+    Book thisBook;
+    std::string poster;
 };
 
 

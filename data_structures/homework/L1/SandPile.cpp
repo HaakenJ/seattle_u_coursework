@@ -23,14 +23,30 @@ SandPile::SandPile(const int *cells) {
 
 // Destructor
 SandPile::~SandPile() {
-    delete [] pile;
+    delete[] pile;
 }
 
 // Copy ctor
-//SandPile::SandPile(const SandPile &sp) {};
+SandPile::SandPile(const SandPile &rhs) {
+    pile = new int[ARRAY_SIZE];
+    for (int i = 0; i < ARRAY_SIZE; i++) {
+        pile[i] = rhs.pile[i];
+    }
+}
 
 // Assignment overload
-//SandPile & SandPile::operator=(const SandPile &sp) {};
+SandPile &SandPile::operator=(const SandPile &rhs) {
+    if (&rhs != this) {
+        delete[] pile; // Get rid of old data (do what dtor would do
+
+        // copy constructor code
+        pile = new int[ARRAY_SIZE];
+        for (int i = 0; i < ARRAY_SIZE; i++) {
+            pile[i] = rhs.pile[i];
+        }
+    }
+    return *this;
+}
 
 // Add a sandpile to this one
 void SandPile::addPile(const SandPile &other) {
@@ -67,7 +83,7 @@ bool SandPile::isInGroup() const {
 void SandPile::setPile(const int *cells) {
     for (int i = 0; i < ARRAY_SIZE; i++) {
         if (cells[i] < 0)
-            return;
+            throw invalid_argument("No values can be negative.");
     }
     for (int i = 0; i < ARRAY_SIZE; ++i) {
         pile[i] = cells[i];
