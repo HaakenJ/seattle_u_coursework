@@ -5,6 +5,13 @@
 
 using namespace std;
 
+/**
+ * This function will print data from a member-rating file.
+ * File needs to be formatted as such:
+*     Member name
+*     List of space separated ratings (i.e. 0 3 4 3 2 1)
+ * @param filepath - path to the ratings.txt file
+ */
 void loadExternalData(const string &filepath) {
     string *members;
     int numMembers = 0;
@@ -31,6 +38,8 @@ void loadExternalData(const string &filepath) {
 
             // After a name is read, next line is the member's book ratings
             // Read from this next line
+            // This assumes that the ratings file will always be formatted
+            // correctly
             if (getline(inFile, memberRatings)) {
                 istringstream ss(memberRatings);
                 numBooks = -1;
@@ -65,8 +74,14 @@ void loadExternalData(const string &filepath) {
         }
         cout << endl;
     }
-    // Close file
+
+    // Perform cleanup
     inFile.close();
+    delete [] members;
+    for (int i = 0; i < 100; ++i) {
+        delete [] ratings[i];
+    }
+    delete [] ratings;
 }
 
 int main() {
