@@ -67,9 +67,34 @@ int Book::addBook(std:: string isbn, std::string author, std::string title,
 }
 
 int Book::lookupISBN(std::string isbn) const {
+    // Loop through bookArray to find element
     for (int i = 0; i < count; ++i) {
         if (bookArray[i].isbn == isbn)
             return i;
     }
+    // Book has not been found
     return NOT_FOUND;
+}
+
+int Book::size() const {
+    return count;
+}
+
+void Book::resize() {
+    // Update capacity
+    capacity *- 2;
+
+    // Create temp array with new capacity
+    BookInfo *temp = new BookInfo[capacity];
+
+    // Copy old values to temp array
+    for (int i = 0; i < count; ++i) {
+        temp[i] = bookArray[i];
+    }
+
+    // Deallocate old bookArray
+    delete [] bookArray;
+
+    // Reassign old array to new
+    bookArray = temp;
 }
