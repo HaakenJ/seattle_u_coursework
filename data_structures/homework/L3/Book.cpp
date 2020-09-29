@@ -42,6 +42,34 @@ Book& Book::operator=(const Book &rhs) {
         }
         return *this;
     }
+}
 
-    
+Book::~Book() {
+    delete [] bookArray;
+}
+
+int Book::addBook(std:: string isbn, std::string author, std::string title,
+            std::string year) {
+    // Determine if resize is needed
+    if (count >= capacity) {
+        resize();
+    }
+
+    // Create a new BookInfo for the new book to be added
+    BookInfo newBook;
+    newBook.isbn = std::to_string(count + 1);
+    newBook.author = author;
+    newBook.title = title;
+    newBook.year = year;
+
+    // Add the new book and increment count
+    bookArray[count++] = newBook;
+}
+
+int Book::lookupISBN(std::string isbn) const {
+    for (int i = 0; i < count; ++i) {
+        if (bookArray[i].isbn == isbn)
+            return i;
+    }
+    return NOT_FOUND;
 }
