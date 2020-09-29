@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/L1
+# Install script for directory: C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/L3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/L1")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/L3")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/L1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/L3/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
