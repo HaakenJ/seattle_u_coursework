@@ -1,3 +1,9 @@
+//
+// Created by KJohnson on 9/29/2020.
+// Lab 3 in CPSC 5910 03 at Seattle University
+// Fall 2020
+//
+
 #include <iostream>
 #include <fstream>
 #include <string>
