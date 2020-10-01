@@ -37,11 +37,11 @@ Book& Book::operator=(const Book &rhs) {
         this->bookArray = new BookInfo[capacity];
 
         // Copy over elements from rhs
-        for (int i = 0; i < count; ++i) {
+        for (int i = 0; i < count; ++i)
             this->bookArray[i] = rhs.bookArray[i];
-        }
-        return *this;
+
     }
+    return *this;
 }
 
 Book::~Book() {
@@ -56,14 +56,13 @@ int Book::addBook(std:: string isbn, std::string author, std::string title,
     }
 
     // Create a new BookInfo for the new book to be added
-    BookInfo newBook;
-    newBook.isbn = std::to_string(count + 1);
-    newBook.author = author;
-    newBook.title = title;
-    newBook.year = year;
+    BookInfo newBook = {isbn, author, title, year};
 
     // Add the new book and increment count
     bookArray[count++] = newBook;
+
+    // Return the bookId (index)
+    return count - 1;
 }
 
 int Book::lookupISBN(std::string isbn) const {
@@ -76,16 +75,26 @@ int Book::lookupISBN(std::string isbn) const {
     return NOT_FOUND;
 }
 
+void Book::printBook(int bookId) const {
+    // Get the proper book's info from bookArray
+    BookInfo book = bookArray[bookId];
+
+    std::cout << book.isbn << ", ";
+    std::cout << book.author << ", ";
+    std::cout << book.title << ", ";
+    std::cout << book.year << std::endl;
+}
+
 int Book::size() const {
     return count;
 }
 
 void Book::resize() {
     // Update capacity
-    capacity *- 2;
+    capacity *= 2;
 
     // Create temp array with new capacity
-    BookInfo *temp = new BookInfo[capacity];
+    auto *temp = new BookInfo[capacity];
 
     // Copy old values to temp array
     for (int i = 0; i < count; ++i) {
