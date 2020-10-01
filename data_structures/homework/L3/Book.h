@@ -81,6 +81,7 @@ public:
      int getCapacity() const;
 
 private:
+    // Setting INITIAL_CAPACITY to 50 for testing of resize()
     static const int INITIAL_CAPACITY = 50;
     struct BookInfo {
         std::string isbn;
