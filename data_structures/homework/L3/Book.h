@@ -74,8 +74,14 @@ public:
      */
     int size() const;
 
+    /**
+     * The capacity of bookArray
+     * @return bookArray capacity
+     */
+     int getCapacity() const;
+
 private:
-    static const int INITIAL_CAPACITY = 113;
+    static const int INITIAL_CAPACITY = 50;
     struct BookInfo {
         std::string isbn;
         std::string author;

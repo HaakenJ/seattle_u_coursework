@@ -89,6 +89,10 @@ int Book::size() const {
     return count;
 }
 
+int Book::getCapacity() const {
+    return capacity;
+}
+
 void Book::resize() {
     // Update capacity
     capacity *= 2;

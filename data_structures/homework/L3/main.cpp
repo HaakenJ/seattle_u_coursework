@@ -68,5 +68,28 @@ void loadAndPrintBooks(const string &fileName, Book &book) {
 int main() {
     Book book;
     loadAndPrintBooks("books.txt", book);
+
+    // Test that addBook properly returns bookId
+    Book book2;
+    int bookId = book2.addBook("1", "Oscar Wilde", "The Picture of Dorian Gray", "1890");
+    assert(bookId == 0);
+    bookId = book2.addBook("2", "Graham Greene", "The Quiet American", "1955");
+    assert(bookId == 1);
+
+    // Test that resize() is working properly
+    assert(book.getCapacity() == 100);
+
+    // Test that NOT_FOUND is returned for invalid isbn
+    assert(book.lookupISBN("56") == -1);
+
+    // Test that copy constructor is functioning properly
+    Book copiedBook(book);
+    assert(copiedBook.size() == 55);
+
+    // Test that assignment operator is functioning properly
+    Book assignedBook;
+    assignedBook = book;
+    assert(assignedBook.size() == 55);
+
     return 0;
 }
