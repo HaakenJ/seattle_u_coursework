@@ -1,6 +1,8 @@
 //
 // Created by Kevin Lundeen on 9/25/20
 // for Seattle University, CPSC 5005, Fall 2020
+// With addition of getCapacity() and change of
+// INITIAL_CAPACITY
 //
 // Header file used by Kramer Johnson for
 // Lab 3 in CPSC 5910 03 at Seattle University
