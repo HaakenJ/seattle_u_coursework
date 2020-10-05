@@ -3,6 +3,7 @@
 //
 
 #include "Member.h"
+#include <stdexcept>
 
 Member::Member() {
     capacity = INITIAL_CAPACITY;
@@ -64,8 +65,14 @@ int Member::addMember(std::string memberName) {
     return count - 1;
 }
 
-std::string Member::findName(int memberId) {
-    return std::__cxx11::string();
+std::string Member::findName(int memberId) noexcept(false) {
+    // Determine if memberId returns a valid member
+    if (memberId < count)
+        return memberArray[memberId].name;
+
+    // Provided memberId is invalid
+    throw std::invalid_argument("The member id provided is not associated"
+                                " with a member");
 }
 
 bool Member::login(int memberId) {

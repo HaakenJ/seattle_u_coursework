@@ -48,7 +48,7 @@ public:
      * @param memberId as returned by the addMember method
      * @return
      */
-    std::string findName(int memberId);
+    std::string findName(int memberId) noexcept(false);
 
     /**
      * Login to account.
