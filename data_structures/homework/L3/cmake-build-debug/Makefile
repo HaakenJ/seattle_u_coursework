@@ -196,6 +196,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+practice.obj: practice.cpp.obj
+
+.PHONY : practice.obj
+
+# target to build an object file
+practice.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/practice.cpp.obj
+.PHONY : practice.cpp.obj
+
+practice.i: practice.cpp.i
+
+.PHONY : practice.i
+
+# target to preprocess a source file
+practice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/practice.cpp.i
+.PHONY : practice.cpp.i
+
+practice.s: practice.cpp.s
+
+.PHONY : practice.s
+
+# target to generate assembly for a file
+practice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/practice.cpp.s
+.PHONY : practice.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -211,6 +238,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... practice.obj
+	@echo ... practice.i
+	@echo ... practice.s
 .PHONY : help
 
 

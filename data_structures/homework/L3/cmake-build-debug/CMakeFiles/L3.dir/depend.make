@@ -7,3 +7,5 @@ CMakeFiles/L3.dir/Book.cpp.obj: ../Book.h
 CMakeFiles/L3.dir/main.cpp.obj: ../Book.h
 CMakeFiles/L3.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/L3.dir/practice.cpp.obj: ../practice.cpp
+

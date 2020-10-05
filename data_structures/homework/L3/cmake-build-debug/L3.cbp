@@ -89,6 +89,9 @@
 		<Unit filename="D:/Haake/Documents/seattle_u_notes/data_structures/homework/L3/main.cpp">
 			<Option target="L3"/>
 		</Unit>
+		<Unit filename="D:/Haake/Documents/seattle_u_notes/data_structures/homework/L3/practice.cpp">
+			<Option target="L3"/>
+		</Unit>
 		<Unit filename="D:/Haake/Documents/seattle_u_notes/data_structures/homework/L3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

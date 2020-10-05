@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Haake/Documents/seattle_u_notes/data_structures/midterm/Stack/Stack.cpp
+Stack.h
+D:/Haake/Documents/seattle_u_notes/data_structures/midterm/Stack/Stack.h
+
+D:/Haake/Documents/seattle_u_notes/data_structures/midterm/Stack/Stack.h
+iostream
+-
+
+D:/Haake/Documents/seattle_u_notes/data_structures/midterm/Stack/main.cpp
+iostream
+-
+Stack.h
+D:/Haake/Documents/seattle_u_notes/data_structures/midterm/Stack/Stack.h
+

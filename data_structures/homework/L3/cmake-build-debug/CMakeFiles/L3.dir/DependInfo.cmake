@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Haake/Documents/seattle_u_notes/data_structures/homework/L3/Book.cpp" "D:/Haake/Documents/seattle_u_notes/data_structures/homework/L3/cmake-build-debug/CMakeFiles/L3.dir/Book.cpp.obj"
   "D:/Haake/Documents/seattle_u_notes/data_structures/homework/L3/main.cpp" "D:/Haake/Documents/seattle_u_notes/data_structures/homework/L3/cmake-build-debug/CMakeFiles/L3.dir/main.cpp.obj"
+  "D:/Haake/Documents/seattle_u_notes/data_structures/homework/L3/practice.cpp" "D:/Haake/Documents/seattle_u_notes/data_structures/homework/L3/cmake-build-debug/CMakeFiles/L3.dir/practice.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
