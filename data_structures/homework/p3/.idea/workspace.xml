@@ -13,12 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fac00395-f76f-4038-8b8a-92afcdfce4f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rating.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Rating.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rating.h" beforeDir="false" afterPath="$PROJECT_DIR$/Rating.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/Rating.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/Rating.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/p3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/p3.exe" afterDir="false" />
@@ -43,6 +37,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
@@ -75,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601956801675</updated>
       <workItem from="1601956803310" duration="2114000" />
-      <workItem from="1602016348164" duration="9096000" />
+      <workItem from="1602016348164" duration="11560000" />
     </task>
     <servers />
   </component>
@@ -89,30 +84,30 @@
     <state x="165" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601956868878" />
     <state x="206" y="211" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602021222301" />
     <state x="2195" y="211" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602021512200" />
-    <state width="2517" height="282" key="GridCell.Tab.0.bottom" timestamp="1602025510685">
+    <state width="2517" height="530" key="GridCell.Tab.0.bottom" timestamp="1602028140977">
       <screen x="1920" y="0" width="2560" height="1040" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601959860917" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602020054086" />
-    <state width="2517" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602025510685" />
-    <state width="2517" height="282" key="GridCell.Tab.0.center" timestamp="1602025510684">
+    <state width="2517" height="530" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602028140977" />
+    <state width="2517" height="530" key="GridCell.Tab.0.center" timestamp="1602028140977">
       <screen x="1920" y="0" width="2560" height="1040" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601959860917" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602020054085" />
-    <state width="2517" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602025510684" />
-    <state width="2517" height="282" key="GridCell.Tab.0.left" timestamp="1602025510684">
+    <state width="2517" height="530" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602028140977" />
+    <state width="2517" height="530" key="GridCell.Tab.0.left" timestamp="1602028140977">
       <screen x="1920" y="0" width="2560" height="1040" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601959860917" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602020054085" />
-    <state width="2517" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602025510684" />
-    <state width="2517" height="282" key="GridCell.Tab.0.right" timestamp="1602025510684">
+    <state width="2517" height="530" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602028140977" />
+    <state width="2517" height="530" key="GridCell.Tab.0.right" timestamp="1602028140977">
       <screen x="1920" y="0" width="2560" height="1040" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601959860917" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602020054085" />
-    <state width="2517" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602025510684" />
+    <state width="2517" height="530" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602028140977" />
     <state width="2517" height="348" key="GridCell.Tab.1.bottom" timestamp="1602024525562">
       <screen x="1920" y="0" width="2560" height="1040" />
     </state>

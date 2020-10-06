@@ -105,32 +105,114 @@ void loadMemberRatingData(const string &fileName, Member &member, Rating &rating
         return;
     }
 
+    cout << "# of books: " << numBooks << endl;
+    cout << "# of members: " << numMembers << endl;
+    cout << endl;
+
     // Perform cleanup
     inFile.close();
 }
 
+int openingScreen() {
+    cout << endl;
+    cout << "************** MENU **************" << endl;
+    cout << "* 1. Add a new member            *" << endl;
+    cout << "* 2. Add a new book              *" << endl;
+    cout << "* 3. Login                       *" << endl;
+    cout << "* 4. Quit                        *" << endl;
+    cout << "**********************************" << endl;
+    cout << endl;
+
+    int response;
+    cout << "Enter a menu option: ";
+    cin >> response;
+
+    while (response < 1 || response > 4) {
+        cout << "That is not a valid selection. ";
+        cout << "Please enter a menu option: ";
+        cin >> response;
+    }
+
+    cout << endl;
+
+    return response;
+}
+
+void memberLogin(Member m) {
+    int memberId;
+
+    // Get users member Id
+    cout << "Enter member ID: ";
+    cin >> memberId;
+    cout << endl;
+
+    // Do not allow the user to enter an incorrect id
+    while (memberId >= m.size()) {
+        cout << "That is not a valid member Id. ";
+        cout << "Please enter the correct id: ";
+        cin >> memberId;
+        cout << endl;
+    }
+
+    // Log the user in and notify
+    m.login(memberId);
+    cout << m.findName(memberId) << ", you are logged in!" << endl;
+    cout << endl;
+}
+
+int loggedInScreen(Book b, Member m, Rating r) {
+    cout << "************** MENU **************" << endl;
+    cout << "* 1. Add a new member            *" << endl;
+    cout << "* 2. Add a new book              *" << endl;
+    cout << "* 3. Rate a book                 *" << endl;
+    cout << "* 4. View ratings                *" << endl;
+    cout << "* 5. See recommendations         *" << endl;
+    cout << "* 6. Logout                      *" << endl;
+    cout << "**********************************" << endl;
+    cout << endl;
+
+    // Get user choice
+    int response;
+    cout << "Enter a menu option: ";
+    cin >> response;
+
+    // Do not allow invalid choices
+    while (response < 1 || response > 6) {
+        cout << "That is not a valid selection. ";
+        cout << "Please enter a menu option: ";
+        cin >> response;
+        cout << endl;
+    }
+
+    cout << endl;
+    return response;
+}
+
+void initialDriver(Book b, Member m, Rating r) {
+
+    switch (openingScreen()) {
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            memberLogin(m);
+            loggedInScreen(b, m, r);
+            break;
+        case 4:
+            break;
+    }
+}
+
 int main() {
-    Book book;
+    Book b;
     Member m;
     Rating r(30);
 
-    loadBooks("books.txt", book);
+    loadBooks("books.txt", b);
     loadMemberRatingData("ratings.txt", m, r);
 
-    for (int i = 0; i < book.size(); ++i) {
-        book.printBook(i);
-    }
-
-    cout << endl;
-    cout << endl;
-
-    for (int i = 0; i < m.size(); ++i) {
-        cout << m.findName(i) << endl;
-        for (int j = 0; j < book.size(); ++j) {
-            cout << r.getRating(i, j) << " ";
-        }
-        cout << endl;
-    }
+    initialDriver(b, m, r);
 
     return 0;
 }
