@@ -2,8 +2,8 @@
 // Created by Haake on 10/4/2020.
 //
 
+#include <iostream>
 #include "Member.h"
-#include <stdexcept>
 
 Member::Member() {
     capacity = INITIAL_CAPACITY;
@@ -65,32 +65,60 @@ int Member::addMember(std::string memberName) {
     return count - 1;
 }
 
-std::string Member::findName(int memberId) noexcept(false) {
+std::string Member::findName(int memberId) const {
     // Determine if memberId returns a valid member
-    if (memberId < count)
+    if (memberId < count && memberId >= 0)
         return memberArray[memberId].name;
 
     // Provided memberId is invalid
-    throw std::invalid_argument("The member id provided is not associated"
-                                " with a member");
+    return "";
 }
 
 bool Member::login(int memberId) {
+    // Determine if memberId returns a valid member
+    if (memberId < count && memberId >= 0) {
+        memberArray[memberId].loggedIn = true;
+        return true;
+    }
+
+    // Provided memberId is invalid
     return false;
 }
 
-void Member::logout(std::string memberName) {
+bool Member::logout(int memberId) {
+    // Determine if memberId returns a valid member
+    if (memberId < count && memberId >= 0) {
+        memberArray[memberId].loggedIn = false;
+        return true;
+    }
 
+    // Provided memberId is invalid
+    return false;
 }
 
-void Member::printAccount(int memberId) {
-
+void Member::printAccount(int memberId) const {
+    if (memberId < count && memberId >= 0) {
+        std::cout << memberArray[memberId].name;
+        std::cout << " (account #: ";
+        std::cout << memberArray[memberId].account << ")";
+    }
+    else {
+        std::cout << "No such member found for member id: " << memberId;
+    }
 }
 
-void Member::print() {
-
+void Member::print() const {
+    for (int i = 0; i < count; ++i) {
+        std::cout << "Member account #: ";
+        std::cout << memberArray[i].account << std::endl;
+        std::cout << "Member name: " << memberArray[i].name << std::endl;
+        std::cout << "This member is";
+        std::cout << (memberArray[i].loggedIn ? " " : " not ") << "logged in";
+        std::cout << std::endl;
+        std::cout << std::endl;
+    }
 }
 
-int Member::size() {
-    return 0;
+int Member::size() const {
+    return count;
 }

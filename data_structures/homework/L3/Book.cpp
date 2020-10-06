@@ -68,7 +68,7 @@ int Book::addBook(std:: string isbn, std::string author, std::string title,
 }
 
 int Book::lookupISBN(std::string isbn) const {
-    // Loop through bookArray to find element
+    // Loop through bookArray to find elem
     for (int i = 0; i < count; ++i) {
         if (bookArray[i].isbn == isbn)
             return i;
