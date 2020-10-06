@@ -92,6 +92,12 @@
 		<Unit filename="D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/Member.h">
 			<Option target="L3"/>
 		</Unit>
+		<Unit filename="D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/Rating.cpp">
+			<Option target="L3"/>
+		</Unit>
+		<Unit filename="D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/Rating.h">
+			<Option target="L3"/>
+		</Unit>
 		<Unit filename="D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/main.cpp">
 			<Option target="L3"/>
 		</Unit>

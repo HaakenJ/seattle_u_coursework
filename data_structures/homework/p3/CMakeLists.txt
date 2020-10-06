@@ -3,4 +3,4 @@ project(L3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(L3 main.cpp Book.cpp practice.cpp Member.cpp)
+add_executable(L3 main.cpp Book.cpp practice.cpp Member.cpp Rating.cpp)

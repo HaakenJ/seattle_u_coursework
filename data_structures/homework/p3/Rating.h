@@ -19,11 +19,11 @@ public:
 
     ~Rating();
 
-    void addRating(int accountId, int bookId, int rating);
+    void addRating(int memberId, int bookId, int rating);
 
-    int getRating(int accountId, int bookId);
+    int getRating(int memberId, int bookId);
 
-    int mostSimilar(int accountId);
+    int mostSimilar(int memberId);
 
     void addMember(int memberId);
 

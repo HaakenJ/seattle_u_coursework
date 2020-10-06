@@ -196,6 +196,33 @@ Member.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Member.cpp.s
 .PHONY : Member.cpp.s
 
+Rating.obj: Rating.cpp.obj
+
+.PHONY : Rating.obj
+
+# target to build an object file
+Rating.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Rating.cpp.obj
+.PHONY : Rating.cpp.obj
+
+Rating.i: Rating.cpp.i
+
+.PHONY : Rating.i
+
+# target to preprocess a source file
+Rating.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Rating.cpp.i
+.PHONY : Rating.cpp.i
+
+Rating.s: Rating.cpp.s
+
+.PHONY : Rating.s
+
+# target to generate assembly for a file
+Rating.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Rating.cpp.s
+.PHONY : Rating.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -265,6 +292,9 @@ help:
 	@echo ... Member.obj
 	@echo ... Member.i
 	@echo ... Member.s
+	@echo ... Rating.obj
+	@echo ... Rating.i
+	@echo ... Rating.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/L3.dir/Book.cpp.obj"
   "CMakeFiles/L3.dir/Member.cpp.obj"
+  "CMakeFiles/L3.dir/Rating.cpp.obj"
   "CMakeFiles/L3.dir/main.cpp.obj"
   "CMakeFiles/L3.dir/practice.cpp.obj"
   "L3.exe"

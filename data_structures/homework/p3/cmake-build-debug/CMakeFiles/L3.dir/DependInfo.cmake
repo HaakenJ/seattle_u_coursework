@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/Book.cpp" "D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/cmake-build-debug/CMakeFiles/L3.dir/Book.cpp.obj"
   "D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/Member.cpp" "D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/cmake-build-debug/CMakeFiles/L3.dir/Member.cpp.obj"
+  "D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/Rating.cpp" "D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/cmake-build-debug/CMakeFiles/L3.dir/Rating.cpp.obj"
   "D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/main.cpp" "D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/cmake-build-debug/CMakeFiles/L3.dir/main.cpp.obj"
   "D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/practice.cpp" "D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/cmake-build-debug/CMakeFiles/L3.dir/practice.cpp.obj"
   )
