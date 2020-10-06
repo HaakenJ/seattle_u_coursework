@@ -12,11 +12,9 @@ string
 iostream
 -
 
-C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Rating.cpp
-climits
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Member.h
+string
 -
-Rating.h
-C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Rating.h
 
 C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Rating.h
 
@@ -29,4 +27,6 @@ Rating.h
 C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Rating.h
 Book.h
 C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Book.h
+Member.h
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Member.h
 

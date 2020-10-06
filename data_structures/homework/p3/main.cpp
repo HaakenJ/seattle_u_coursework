@@ -2,6 +2,7 @@
 #include <bits/stdc++.h>
 #include "Rating.h"
 #include "Book.h"
+#include "Member.h"
 
 using namespace std;
 
@@ -54,13 +55,81 @@ void loadBooks(const string &fileName, Book &book) {
     delete [] currentBook;
 }
 
+/**
+ * This function will load data from a member-rating file.
+ * File needs to be formatted as such:
+*     Member name
+*     List of space separated ratings (i.e. 0 3 4 3 2 1)
+ * @param filepath - path to the ratings.txt file
+ * @param member - address of a Member object
+ * @param rating - address of a Rating object
+ */
+void loadMemberRatingData(const string &fileName, Member &member, Rating &rating) {
+
+    // numMembers will keep track of memberId's
+    int numMembers = 0;
+    int numBooks;
+    string filepath = "../" + fileName;
+
+    string name;
+    string memberRatings;
+    ifstream inFile;
+
+    // Attempt to open file
+    inFile.open(filepath);
+
+    if (inFile.is_open()) {
+        // Proceed while lines are being read from file
+        while (getline(inFile, name)) {
+            member.addMember(name);
+
+            // After a name is read, next line is the member's book ratings
+            if (getline(inFile, memberRatings)) {
+                istringstream ss(memberRatings);
+                numBooks = -1;
+
+                // While there is data in the input stream
+                while (ss) {
+                    int currRating;
+                    ss >> currRating;
+                    // Assign the rating to the associated member's
+                    // rating array
+                    rating.addRating(numMembers, ++numBooks, currRating);
+                }
+            }
+            numMembers++;
+        }
+    } else  {
+        // Filepath was invalid, exit application
+        cout << "ERROR: cannot open file";
+        return;
+    }
+
+    // Perform cleanup
+    inFile.close();
+}
+
 int main() {
     Book book;
+    Member m;
+    Rating r(30);
 
     loadBooks("books.txt", book);
+    loadMemberRatingData("ratings.txt", m, r);
 
     for (int i = 0; i < book.size(); ++i) {
         book.printBook(i);
+    }
+
+    cout << endl;
+    cout << endl;
+
+    for (int i = 0; i < m.size(); ++i) {
+        cout << m.findName(i) << endl;
+        for (int j = 0; j < book.size(); ++j) {
+            cout << r.getRating(i, j) << " ";
+        }
+        cout << endl;
     }
 
     return 0;

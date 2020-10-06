@@ -78,17 +78,15 @@ private:
      * Automatically enlarge if a bookId is added that is out of the range
      * of the current bookCapacity (bookId represents the index of a book in
      * Book.bookArray)
-     * @param newCount is the index of the new bookId
      */
-    void resizeCol(int newCount);
+    void resizeCol();
 
     /**
      * Automatically enlarge if a memberId is added that is out of the range
      * of the current memberCapacity (memberId represents the index of a member in
      * Member.memberArray)
-     * @param newCount is the index of the new bookId
      */
-    void resizeRow(int newCount);
+    void resizeRow();
 
     void clear();
 };

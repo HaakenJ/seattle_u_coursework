@@ -11,6 +11,7 @@ CMakeFiles/p3.dir/Rating.cpp.obj: ../Rating.cpp
 CMakeFiles/p3.dir/Rating.cpp.obj: ../Rating.h
 
 CMakeFiles/p3.dir/main.cpp.obj: ../Book.h
+CMakeFiles/p3.dir/main.cpp.obj: ../Member.h
 CMakeFiles/p3.dir/main.cpp.obj: ../Rating.h
 CMakeFiles/p3.dir/main.cpp.obj: ../main.cpp
 
