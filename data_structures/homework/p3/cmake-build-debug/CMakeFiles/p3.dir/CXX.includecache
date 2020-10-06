@@ -6,21 +6,27 @@
 
 #IncludeRegexTransform: 
 
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/Book.h
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Book.h
 string
 -
 iostream
 -
 
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/Rating.h
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Rating.cpp
+climits
+-
+Rating.h
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Rating.h
 
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/main.cpp
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Rating.h
+
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/main.cpp
 iostream
 -
 bits/stdc++.h
 -
 Rating.h
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/Rating.h
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Rating.h
 Book.h
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/Book.h
+C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/Book.h
 
