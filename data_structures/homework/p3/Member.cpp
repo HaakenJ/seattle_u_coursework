@@ -122,3 +122,22 @@ void Member::print() const {
 int Member::size() const {
     return count;
 }
+
+void Member::resize() {
+    // Update capacity
+    capacity *= 2;
+
+    // Create temp array with new capacity
+    auto *temp = new MemberInfo[capacity];
+
+    // Copy old values to temp array
+    for (int i = 0; i < count; ++i) {
+        temp[i] = memberArray[i];
+    }
+
+    // Deallocate old memberArray
+    delete [] memberArray;
+
+    // Reassign old array to new
+    memberArray = temp;
+}
