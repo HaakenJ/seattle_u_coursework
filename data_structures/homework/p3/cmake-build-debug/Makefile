@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named L3
+# Target rules for targets named p3
 
 # Build rule for target.
-L3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 L3
-.PHONY : L3
+p3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 p3
+.PHONY : p3
 
 # fast build rule for target.
-L3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/build
-.PHONY : L3/fast
+p3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/build
+.PHONY : p3/fast
 
 Book.obj: Book.cpp.obj
 
@@ -148,7 +148,7 @@ Book.obj: Book.cpp.obj
 
 # target to build an object file
 Book.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Book.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/Book.cpp.obj
 .PHONY : Book.cpp.obj
 
 Book.i: Book.cpp.i
@@ -157,7 +157,7 @@ Book.i: Book.cpp.i
 
 # target to preprocess a source file
 Book.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Book.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/Book.cpp.i
 .PHONY : Book.cpp.i
 
 Book.s: Book.cpp.s
@@ -166,7 +166,7 @@ Book.s: Book.cpp.s
 
 # target to generate assembly for a file
 Book.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Book.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/Book.cpp.s
 .PHONY : Book.cpp.s
 
 Member.obj: Member.cpp.obj
@@ -175,7 +175,7 @@ Member.obj: Member.cpp.obj
 
 # target to build an object file
 Member.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Member.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/Member.cpp.obj
 .PHONY : Member.cpp.obj
 
 Member.i: Member.cpp.i
@@ -184,7 +184,7 @@ Member.i: Member.cpp.i
 
 # target to preprocess a source file
 Member.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Member.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/Member.cpp.i
 .PHONY : Member.cpp.i
 
 Member.s: Member.cpp.s
@@ -193,7 +193,7 @@ Member.s: Member.cpp.s
 
 # target to generate assembly for a file
 Member.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Member.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/Member.cpp.s
 .PHONY : Member.cpp.s
 
 Rating.obj: Rating.cpp.obj
@@ -202,7 +202,7 @@ Rating.obj: Rating.cpp.obj
 
 # target to build an object file
 Rating.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Rating.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/Rating.cpp.obj
 .PHONY : Rating.cpp.obj
 
 Rating.i: Rating.cpp.i
@@ -211,7 +211,7 @@ Rating.i: Rating.cpp.i
 
 # target to preprocess a source file
 Rating.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Rating.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/Rating.cpp.i
 .PHONY : Rating.cpp.i
 
 Rating.s: Rating.cpp.s
@@ -220,7 +220,7 @@ Rating.s: Rating.cpp.s
 
 # target to generate assembly for a file
 Rating.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/Rating.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/Rating.cpp.s
 .PHONY : Rating.cpp.s
 
 main.obj: main.cpp.obj
@@ -229,7 +229,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -238,7 +238,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -247,35 +247,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-practice.obj: practice.cpp.obj
-
-.PHONY : practice.obj
-
-# target to build an object file
-practice.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/practice.cpp.obj
-.PHONY : practice.cpp.obj
-
-practice.i: practice.cpp.i
-
-.PHONY : practice.i
-
-# target to preprocess a source file
-practice.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/practice.cpp.i
-.PHONY : practice.cpp.i
-
-practice.s: practice.cpp.s
-
-.PHONY : practice.s
-
-# target to generate assembly for a file
-practice.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L3.dir\build.make CMakeFiles/L3.dir/practice.cpp.s
-.PHONY : practice.cpp.s
 
 # Help Target
 help:
@@ -285,7 +258,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... L3
+	@echo ... p3
 	@echo ... Book.obj
 	@echo ... Book.i
 	@echo ... Book.s
@@ -298,9 +271,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... practice.obj
-	@echo ... practice.i
-	@echo ... practice.s
 .PHONY : help
 
 

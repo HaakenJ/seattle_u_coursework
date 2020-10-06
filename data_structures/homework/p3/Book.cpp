@@ -51,7 +51,7 @@ Book::~Book() {
 }
 
 int Book::addBook(std:: string isbn, std::string author, std::string title,
-            std::string year) {
+                  std::string year) {
     // Determine if resize is needed
     if (count >= capacity) {
         resize();

@@ -22,7 +22,7 @@
 class Book {
 public:
     static const int NOT_FOUND = -1;
-    
+
     /**
      * Constructor
      */
@@ -80,7 +80,7 @@ public:
      * The capacity of bookArray
      * @return bookArray capacity
      */
-     int getCapacity() const;
+    int getCapacity() const;
 
 private:
     // Setting INITIAL_CAPACITY to 50 for testing of resize()

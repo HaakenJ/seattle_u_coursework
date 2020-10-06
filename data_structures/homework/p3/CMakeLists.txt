@@ -1,6 +1,18 @@
 cmake_minimum_required(VERSION 3.17)
-project(L3)
+project(p3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(L3 main.cpp Book.cpp practice.cpp Member.cpp Rating.cpp)
+set(PROJECT_SOURCES
+        Rating.cpp
+        Book.cpp
+        Member.cpp
+        )
+
+set(PROJECT_HEADERS
+        Rating.h
+        Book.h
+        Member.h
+        )
+
+add_executable(p3 main.cpp ${PROJECT_SOURCES} ${PROJECT_HEADERS})
