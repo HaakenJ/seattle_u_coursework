@@ -61,11 +61,12 @@ void loadBooks(const string &fileName, Book &book) {
  * File needs to be formatted as such:
 *     Member name
 *     List of space separated ratings (i.e. 0 3 4 3 2 1)
- * @param filepath - path to the ratings.txt file
+ * @param fileName - name of the file containing member and rating data
  * @param member - address of a Member object
  * @param rating - address of a Rating object
  */
-void loadMemberRatingData(const string &fileName, Member &member, Rating &rating) {
+void loadMemberRatingData(const string &fileName, Member &member,
+                          Rating &rating) {
 
     // numMembers will keep track of memberId's
     int numMembers = 0;
@@ -118,12 +119,11 @@ int main() {
     Book b;
     Member m;
     Rating r(30);
-    Driver d;
 
     loadBooks("books.txt", b);
     loadMemberRatingData("ratings.txt", m, r);
 
-    d.initialDriver(b, m, r);
+    Driver::initialDriver(b, m, r);
 
     return 0;
 }
