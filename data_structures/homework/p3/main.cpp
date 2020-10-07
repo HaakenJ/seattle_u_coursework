@@ -120,8 +120,15 @@ int main() {
     Member m;
     Rating r(30);
 
-    loadBooks("books.txt", b);
-    loadMemberRatingData("ratings.txt", m, r);
+    string bookFile;
+    string ratingsFile;
+
+    cout << "Please enter the name of a book file: ";
+    cin >> bookFile;
+    cout << "Please enter the name of a ratings file: ";
+    cin >> ratingsFile;
+    loadBooks(bookFile, b);
+    loadMemberRatingData(ratingsFile, m, r);
 
     Driver::initialDriver(b, m, r);
 
