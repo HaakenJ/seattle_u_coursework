@@ -5,7 +5,7 @@
 // INITIAL_CAPACITY
 //
 // Header file used by Kramer Johnson for
-// Lab 3 in CPSC 5910 03 at Seattle University
+// Project 3 in CPSC 5910 03 at Seattle University
 // Fall 2020
 //
 
@@ -62,7 +62,7 @@ public:
      * @param isbn of book to lookup
      * @return bookId of given book or NOT_FOUND
      */
-    int lookupISBN(std::string isbn) const;
+    int lookupISBN(const std::string &isbn) const;
 
     /**
      * Print to std::cout the details for the given book.
@@ -75,12 +75,6 @@ public:
      * @return the number of books in the list
      */
     int size() const;
-
-    /**
-     * The capacity of bookArray
-     * @return bookArray capacity
-     */
-    int getCapacity() const;
 
 private:
     // Setting INITIAL_CAPACITY to 50 for testing of resize()

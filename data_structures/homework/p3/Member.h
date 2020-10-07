@@ -2,6 +2,10 @@
 // Created by Kevin Lundeen on 9/25/20
 // for Seattle University, CPSC 5005, Fall 2020
 //
+// Header file used by Kramer Johnson for
+// Project 3 in CPSC 5910 03 at Seattle University
+// Fall 2020
+//
 
 #pragma once
 

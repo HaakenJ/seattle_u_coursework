@@ -67,7 +67,7 @@ int Book::addBook(std:: string isbn, std::string author, std::string title,
     return count - 1;
 }
 
-int Book::lookupISBN(std::string isbn) const {
+int Book::lookupISBN(const std::string &isbn) const {
     // Loop through bookArray to find element
     for (int i = 0; i < count; ++i) {
         if (bookArray[i].isbn == isbn)
@@ -89,10 +89,6 @@ void Book::printBook(int bookId) const {
 
 int Book::size() const {
     return count;
-}
-
-int Book::getCapacity() const {
-    return capacity;
 }
 
 void Book::resize() {

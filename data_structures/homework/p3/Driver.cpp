@@ -18,10 +18,12 @@ int Driver::openingScreen() {
     cout << "**********************************" << endl;
     cout << endl;
 
+    // Get user choice
     int response;
     cout << "Enter a menu option: ";
     cin >> response;
 
+    // Do not allow invalid choices
     while (response < 1 || response > 4) {
         cout << "That is not a valid selection. ";
         cout << "Please enter a menu option: ";
@@ -29,7 +31,6 @@ int Driver::openingScreen() {
     }
 
     cout << endl;
-
     return response;
 }
 
@@ -90,77 +91,6 @@ void Driver::loggedInDriver(Book &b, Member &m, Rating &r, int memberId, int cho
     }
 }
 
-int Driver::memberLogin(Member &m) {
-    int memberId;
-
-    // Get users member Id
-    cout << "Enter member ID: ";
-    cin >> memberId;
-    cout << endl;
-
-    // Do not allow the user to enter an incorrect id
-    while (memberId >= m.size()) {
-        cout << "That is not a valid member Id. ";
-        cout << "Please enter the correct id: ";
-        cin >> memberId;
-        cout << endl;
-    }
-
-    // Log the user in and notify
-    m.login(memberId);
-    cout << m.findName(memberId) << ", you are logged in!" << endl;
-    cout << endl;
-
-    return memberId;
-}
-
-void Driver::memberLogout(Member &m, int memberId) {
-    // Log user out
-    m.logout(memberId);
-    cout << endl;
-}
-
-void Driver::addMember(Member &m) {
-    string newName;
-    cout << "Enter the name of the new member :";
-    cin >> newName;
-
-    int memberId = m.addMember(newName);
-
-    cout << m.findName(memberId);
-    cout << " (member Id: " << memberId;
-    cout << ") was added." << endl;
-    cout << endl;
-}
-
-void Driver::addBook(Book &b) {
-    string author;
-    string title;
-    string year;
-    // isbn is number of the book
-    string isbn = to_string(b.size() + 1);
-
-    // Remove the hanging newline character
-    cin.get();
-    cout << "Enter the author of the new book: ";
-    getline(cin, author);
-
-    cout << "Enter the title of the new book: ";
-    getline(cin, title);
-
-    cout << "Enter the year (or range of years) of the new book: ";
-    getline(cin, year);
-    cout << endl;
-
-    b.addBook(isbn, author, title, year);
-
-    // Newest book will always have a bookId of one less than the size
-    // Always the last item in the bookArrray
-    b.printBook(b.size() - 1);
-    cout << " was added." << endl;
-    cout << endl;
-}
-
 int Driver::loggedInScreen(Book &b, Member &m, Rating &r) {
     cout << "************** MENU **************" << endl;
     cout << "* 1. Add a new member            *" << endl;
@@ -189,6 +119,85 @@ int Driver::loggedInScreen(Book &b, Member &m, Rating &r) {
     return response;
 }
 
+int Driver::memberLogin(Member &m) {
+    int memberId;
+
+    // Get users member Id
+    cout << "Enter member ID: ";
+    cin >> memberId;
+    cout << endl;
+
+    // Do not allow invalid member id
+    while (memberId >= m.size()) {
+        cout << "That is not a valid member Id. ";
+        cout << "Please enter the correct id: ";
+        cin >> memberId;
+        cout << endl;
+    }
+
+    // Log the user in and notify
+    m.login(memberId);
+    cout << m.findName(memberId) << ", you are logged in!" << endl;
+    cout << endl;
+
+    return memberId;
+}
+
+void Driver::memberLogout(Member &m, int memberId) {
+    // Log user out
+    m.logout(memberId);
+    cout << endl;
+}
+
+void Driver::addMember(Member &m) {
+
+    // Get new member name
+    string newName;
+    cout << "Enter the name of the new member :";
+    cin >> newName;
+
+    // Add member to Member object
+    int memberId = m.addMember(newName);
+
+    // Notify user than new member has been added
+    cout << m.findName(memberId);
+    cout << " (member Id: " << memberId;
+    cout << ") was added." << endl;
+    cout << endl;
+}
+
+void Driver::addBook(Book &b) {
+    string author;
+    string title;
+    string year;
+
+    // set isbn
+    string isbn = to_string(b.size() + 1);
+
+    // Remove the hanging newline character
+    cin.get();
+
+    // Get info about new book
+    cout << "Enter the author of the new book: ";
+    getline(cin, author);
+
+    cout << "Enter the title of the new book: ";
+    getline(cin, title);
+
+    cout << "Enter the year (or range of years) of the new book: ";
+    getline(cin, year);
+    cout << endl;
+
+    // Add book to Book object
+    b.addBook(isbn, author, title, year);
+
+    // Newest book will always have a bookId(index) of one less than the size
+    // Always the last item in the bookArrray
+    b.printBook(b.size() - 1);
+    cout << " was added." << endl;
+    cout << endl;
+}
+
 void Driver::displayUserRatings(Book &b, Member &m, Rating &r, int memberId) {
     cout << m.findName(memberId) << "'s ratings..." << endl;
 
@@ -201,12 +210,16 @@ void Driver::displayUserRatings(Book &b, Member &m, Rating &r, int memberId) {
 }
 
 void Driver::displayRecommendations(Book &b, Member &m, Rating &r, int memberId) {
+
+    // Get most similar member
     int mostSimilar = r.mostSimilar(memberId);
 
+    // Notify user of their most similar member
     cout << "You have similar taste in books as ";
     cout << m.findName(mostSimilar) << "!" << endl;
     cout << endl;
 
+    // Display mostSimilar's books with rating of 5
     cout << "Here are the books they really liked:" << endl;
     for (int i = 0; i < b.size(); ++i) {
         if (r.getRating(mostSimilar, i) == 5) {
@@ -216,6 +229,7 @@ void Driver::displayRecommendations(Book &b, Member &m, Rating &r, int memberId)
     }
     cout << endl;
 
+    // Display mostSimilar's books with rating of 3
     cout << "And here are the books they liked:" << endl;
     for (int i = 0; i < b.size(); ++i) {
         if (r.getRating(mostSimilar, i) == 3) {
@@ -227,18 +241,20 @@ void Driver::displayRecommendations(Book &b, Member &m, Rating &r, int memberId)
 }
 
 void Driver::rateBook(Book &b, Member &m, Rating &r, int memberId) {
+
+    // Get isbn
     int isbn;
     cout << "Enter the ISBN for the book you'd like to rate: ";
     cin >> isbn;
 
-    // Isbn == index in bookArray + 1
+    // Isbn == (index in bookArray) + 1
     while (isbn < 1 || isbn > b.size()) {
         cout << "That is an invalid isbn.  Please enter an ISBN: ";
         cin >> isbn;
     }
     cout << endl;
 
-    // Get the book idea from the isbn
+    // Get the book id from the isbn
     int bookId = b.lookupISBN(to_string(isbn));
 
     // Check if the book has already been rated
@@ -257,12 +273,14 @@ void Driver::rateBook(Book &b, Member &m, Rating &r, int memberId) {
             cin >> reRate;
         }
 
+        // Exit if response is 'n'
         if (reRate == "n") {
             cout << endl;
             return;
         }
     }
 
+    // Let user rate the book
     int rating;
     cout << "Enter your rating: ";
     cin >> rating;
@@ -288,6 +306,7 @@ void Driver::rateBook(Book &b, Member &m, Rating &r, int memberId) {
         cout << endl;
     }
 
+    // Display the user's book and rating
     r.addRating(memberId, bookId, rating);
     cout << "Your new rating for ";
     b.printBook(bookId);
