@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/p3.dir/Book.cpp.obj"
+  "CMakeFiles/p3.dir/Driver.cpp.obj"
   "CMakeFiles/p3.dir/Member.cpp.obj"
   "CMakeFiles/p3.dir/Rating.cpp.obj"
   "CMakeFiles/p3.dir/main.cpp.obj"

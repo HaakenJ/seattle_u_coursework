@@ -3,6 +3,11 @@ project(p3)
 
 set(CMAKE_CXX_STANDARD 14)
 
+file(GLOB SOURCES
+        ./*.h
+        ./*.cpp
+        )
+
 set(PROJECT_SOURCES
         Rating.cpp
         Book.cpp
@@ -15,4 +20,4 @@ set(PROJECT_HEADERS
         Member.h
         )
 
-add_executable(p3 main.cpp ${PROJECT_SOURCES} ${PROJECT_HEADERS})
+add_executable(p3 main.cpp Driver.cpp Driver.h  ${SOURCES})

@@ -53,19 +53,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2
+CMAKE_SOURCE_DIR = D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ice_1.dir/depend.make
@@ -78,55 +78,55 @@ include CMakeFiles/ice_1.dir/flags.make
 
 CMakeFiles/ice_1.dir/main.cpp.obj: CMakeFiles/ice_1.dir/flags.make
 CMakeFiles/ice_1.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ice_1.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ice_1.dir\main.cpp.obj -c C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ice_1.dir/main.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ice_1.dir\main.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\main.cpp
 
 CMakeFiles/ice_1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ice_1.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\main.cpp > CMakeFiles\ice_1.dir\main.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\main.cpp > CMakeFiles\ice_1.dir\main.cpp.i
 
 CMakeFiles/ice_1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ice_1.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\main.cpp -o CMakeFiles\ice_1.dir\main.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\main.cpp -o CMakeFiles\ice_1.dir\main.cpp.s
 
 CMakeFiles/ice_1.dir/Book.cpp.obj: CMakeFiles/ice_1.dir/flags.make
 CMakeFiles/ice_1.dir/Book.cpp.obj: ../Book.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ice_1.dir/Book.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ice_1.dir\Book.cpp.obj -c C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\Book.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ice_1.dir/Book.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ice_1.dir\Book.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\Book.cpp
 
 CMakeFiles/ice_1.dir/Book.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ice_1.dir/Book.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\Book.cpp > CMakeFiles\ice_1.dir\Book.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\Book.cpp > CMakeFiles\ice_1.dir\Book.cpp.i
 
 CMakeFiles/ice_1.dir/Book.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ice_1.dir/Book.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\Book.cpp -o CMakeFiles\ice_1.dir\Book.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\Book.cpp -o CMakeFiles\ice_1.dir\Book.cpp.s
 
 CMakeFiles/ice_1.dir/Member.cpp.obj: CMakeFiles/ice_1.dir/flags.make
 CMakeFiles/ice_1.dir/Member.cpp.obj: ../Member.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ice_1.dir/Member.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ice_1.dir\Member.cpp.obj -c C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\Member.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ice_1.dir/Member.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ice_1.dir\Member.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\Member.cpp
 
 CMakeFiles/ice_1.dir/Member.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ice_1.dir/Member.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\Member.cpp > CMakeFiles\ice_1.dir\Member.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\Member.cpp > CMakeFiles\ice_1.dir\Member.cpp.i
 
 CMakeFiles/ice_1.dir/Member.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ice_1.dir/Member.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\Member.cpp -o CMakeFiles\ice_1.dir\Member.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\Member.cpp -o CMakeFiles\ice_1.dir\Member.cpp.s
 
 CMakeFiles/ice_1.dir/Rating.cpp.obj: CMakeFiles/ice_1.dir/flags.make
 CMakeFiles/ice_1.dir/Rating.cpp.obj: ../Rating.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ice_1.dir/Rating.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ice_1.dir\Rating.cpp.obj -c C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\Rating.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ice_1.dir/Rating.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ice_1.dir\Rating.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\Rating.cpp
 
 CMakeFiles/ice_1.dir/Rating.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ice_1.dir/Rating.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\Rating.cpp > CMakeFiles\ice_1.dir\Rating.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\Rating.cpp > CMakeFiles\ice_1.dir\Rating.cpp.i
 
 CMakeFiles/ice_1.dir/Rating.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ice_1.dir/Rating.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\Rating.cpp -o CMakeFiles\ice_1.dir\Rating.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\Rating.cpp -o CMakeFiles\ice_1.dir\Rating.cpp.s
 
 # Object files for target ice_1
 ice_1_OBJECTS = \
@@ -146,7 +146,7 @@ ice_1.exe: CMakeFiles/ice_1.dir/build.make
 ice_1.exe: CMakeFiles/ice_1.dir/linklibs.rsp
 ice_1.exe: CMakeFiles/ice_1.dir/objects1.rsp
 ice_1.exe: CMakeFiles/ice_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ice_1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ice_1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ice_1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -159,6 +159,6 @@ CMakeFiles/ice_1.dir/clean:
 .PHONY : CMakeFiles/ice_1.dir/clean
 
 CMakeFiles/ice_1.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2 C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2 C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\cmake-build-debug C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\cmake-build-debug C:\Users\kjohnson\Desktop\Kramer\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles\ice_1.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2 D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2 D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\cmake-build-debug D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\cmake-build-debug D:\Haake\Documents\seattle_u_notes\data_structures\homework\L2\cmake-build-debug\CMakeFiles\ice_1.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ice_1.dir/depend
 

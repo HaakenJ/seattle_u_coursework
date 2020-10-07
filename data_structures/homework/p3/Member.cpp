@@ -44,6 +44,7 @@ Member& Member::operator=(const Member &rhs) {
             this->memberArray[i] = rhs.memberArray[i];
         }
     }
+    return *this;
 }
 
 Member::~Member() {

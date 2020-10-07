@@ -84,7 +84,7 @@ void Book::printBook(int bookId) const {
     std::cout << book.isbn << ", ";
     std::cout << book.author << ", ";
     std::cout << book.title << ", ";
-    std::cout << book.year << std::endl;
+    std::cout << book.year;
 }
 
 int Book::size() const {
