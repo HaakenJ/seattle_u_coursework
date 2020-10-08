@@ -71,6 +71,12 @@ public:
     void printBook(int bookId) const;
 
     /**
+     * Return a string containing the details for the given book.
+     * @param bookId of the desired book
+     */
+    std::string getBookString(int bookId) const;
+
+    /**
      * How many books have been added?
      * @return the number of books in the list
      */

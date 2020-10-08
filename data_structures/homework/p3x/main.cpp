@@ -14,20 +14,30 @@ using namespace std;
  * @param fileName - name of the file containing book info
  * @param book - address of a book object
  */
-void loadBooks(const string &fileName, Book &book) {
+void loadBooks(Book &book) {
     auto *currentBook = new string[4];
     int isbn = 1;
+    string filepath = "../books-updated.txt";
 
-    string filepath = "../" + fileName;
     string bookLine;
     ifstream inFile;
 
     // Attempt to open file
     inFile.open(filepath);
 
+    // If the opening failed, prompt the user for a file name
+    if (inFile.fail()) {
+        cout << "Please enter the name of a books file: ";
+        cin >> filepath;
+        filepath = "../" + filepath;
+
+        // Attempt to open file
+        inFile.open(filepath);
+    }
+
     if (inFile.is_open()) {
         // Proceed while lines are being read from file
-        while(getline(inFile, bookLine)) {
+        while (getline(inFile, bookLine)) {
             istringstream ss(bookLine);
 
             // Add the isbn as the position in the list
@@ -46,7 +56,7 @@ void loadBooks(const string &fileName, Book &book) {
             book.addBook(currentBook[0], currentBook[1],
                          currentBook[2], currentBook[3]);
         }
-    } else  {
+    } else {
         // File name was invalid, exit application
         cout << "ERROR: cannot open file";
         return;
@@ -54,7 +64,7 @@ void loadBooks(const string &fileName, Book &book) {
 
     // Perform cleanup
     inFile.close();
-    delete [] currentBook;
+    delete[] currentBook;
 }
 
 /**
@@ -66,13 +76,13 @@ void loadBooks(const string &fileName, Book &book) {
  * @param member - address of a Member object
  * @param rating - address of a Rating object
  */
-void loadMemberRatingData(const string &fileName, Member &member,
+void loadMemberRatingData(Member &member,
                           Rating &rating) {
 
     // numMembers will keep track of memberId's
     int numMembers = 0;
     int numBooks;
-    string filepath = "../" + fileName;
+    string filepath = "../ratings-updated.txt";
 
     string name;
     string memberRatings;
@@ -80,6 +90,16 @@ void loadMemberRatingData(const string &fileName, Member &member,
 
     // Attempt to open file
     inFile.open(filepath);
+
+    // If the opening failed, prompt the user for a file name
+    if (inFile.fail()) {
+        cout << "Please enter the name of a ratings file: ";
+        cin >> filepath;
+        filepath = "../" + filepath;
+
+        // Attempt to open file
+        inFile.open(filepath);
+    }
 
     if (inFile.is_open()) {
         // Proceed while lines are being read from file
@@ -102,7 +122,7 @@ void loadMemberRatingData(const string &fileName, Member &member,
             }
             numMembers++;
         }
-    } else  {
+    } else {
         // Filepath was invalid, exit application
         cout << "ERROR: cannot open file";
         return;
@@ -118,21 +138,60 @@ void loadMemberRatingData(const string &fileName, Member &member,
 
 /**
  * Function to write all book, member, and rating data to a file
+ * @param b Book object containing book data
+ * @param m Member object containing member data
+ * @param r rating object containing rating data
  */
- void writeDataToFile(Book &b, Member &m, Rating &r) {
+void writeDataToFile(Book &b, Member &m, Rating &r) {
     string bookFile = "../books-updated.txt";
-    string ratingFile = "../ratings-updated.txt";
- }
+    string ratingsFile = "../ratings-updated.txt";
+
+    ofstream updatedBooks;
+    ofstream updatedRatings;
+
+    updatedBooks.open(bookFile);
+    updatedRatings.open(ratingsFile);
+
+    if (updatedBooks) {
+        for (int i = 0; i < b.size(); ++i) {
+            updatedBooks << b.getBookString(i) + "\n";
+        }
+    } else {
+        // Filepath was invalid, exit application
+        cout << "ERROR: cannot open/create updated book file";
+        return;
+    }
+
+    if (updatedRatings) {
+        for (int i = 0; i < m.size(); ++i) {
+            updatedRatings << m.findName(i) + "\n";
+            for (int j = 0; j < b.size(); ++j) {
+                updatedRatings << to_string(r.getRating(i, j)) + " ";
+            }
+            updatedRatings << "\n";
+        }
+    } else {
+        // Filepath was invalid, exit application
+        cout << "ERROR: cannot open/create updated book file";
+        return;
+    }
+
+    // Cleanup
+    updatedBooks.close();
+    updatedRatings.close();
+}
 
 int main() {
     Book b;
     Member m;
     Rating r(30);
 
-    loadBooks("books.txt", b);
-    loadMemberRatingData("ratings.txt", m, r);
+    loadBooks(b);
+    loadMemberRatingData(m, r);
 
     Driver::initialDriver(b, m, r);
+
+    writeDataToFile(b, m, r);
 
     return 0;
 }

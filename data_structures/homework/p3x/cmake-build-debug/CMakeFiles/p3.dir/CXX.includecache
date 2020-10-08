@@ -6,19 +6,9 @@
 
 #IncludeRegexTransform: 
 
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Book.cpp
-Book.h
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Book.h
-
 D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Book.h
 string
 -
-iostream
--
-
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Driver.cpp
-Driver.h
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Driver.h
 iostream
 -
 
@@ -30,26 +20,16 @@ D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Member.h
 Rating.h
 D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Rating.h
 
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Member.cpp
-iostream
--
-Member.h
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Member.h
-
 D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Member.h
 string
 -
-
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Rating.cpp
-climits
--
-Rating.h
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Rating.h
 
 D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/Rating.h
 
 D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3x/main.cpp
 iostream
+-
+fstream
 -
 bits/stdc++.h
 -

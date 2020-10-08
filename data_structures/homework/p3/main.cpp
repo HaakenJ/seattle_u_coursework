@@ -26,7 +26,7 @@ void loadBooks(const string &fileName, Book &book) {
 
     if (inFile.is_open()) {
         // Proceed while lines are being read from file
-        while(getline(inFile, bookLine)) {
+        while (getline(inFile, bookLine)) {
             istringstream ss(bookLine);
 
             // Add the isbn as the position in the list
@@ -45,7 +45,7 @@ void loadBooks(const string &fileName, Book &book) {
             book.addBook(currentBook[0], currentBook[1],
                          currentBook[2], currentBook[3]);
         }
-    } else  {
+    } else {
         // File name was invalid, exit application
         cout << "ERROR: cannot open file";
         return;
@@ -53,7 +53,7 @@ void loadBooks(const string &fileName, Book &book) {
 
     // Perform cleanup
     inFile.close();
-    delete [] currentBook;
+    delete[] currentBook;
 }
 
 /**
@@ -101,7 +101,7 @@ void loadMemberRatingData(const string &fileName, Member &member,
             }
             numMembers++;
         }
-    } else  {
+    } else {
         // Filepath was invalid, exit application
         cout << "ERROR: cannot open file";
         return;
@@ -127,6 +127,7 @@ int main() {
     cin >> bookFile;
     cout << "Please enter the name of a ratings file: ";
     cin >> ratingsFile;
+
     loadBooks(bookFile, b);
     loadMemberRatingData(ratingsFile, m, r);
 

@@ -13,6 +13,23 @@
   <component name="ChangeListManager">
     <list default="true" id="fac00395-f76f-4038-8b8a-92afcdfce4f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../p3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../p3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../p3/Book.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../p3/Book.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../p3/Book.h" beforeDir="false" afterPath="$PROJECT_DIR$/../p3/Book.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../p3/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../p3/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Book.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Book.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Book.h" beforeDir="false" afterPath="$PROJECT_DIR$/Book.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Member.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rating.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Rating.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/Book.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/Book.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/Driver.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/Driver.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p3.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/p3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/p3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +54,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../p3" />
+    <property name="settings.editor.selected.configurable" value="language.cpp.clangd" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="p3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p3" TARGET_NAME="p3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p3" RUN_TARGET_NAME="p3">
@@ -69,7 +86,8 @@
       <workItem from="1602016348164" duration="11560000" />
       <workItem from="1602030905112" duration="10814000" />
       <workItem from="1602100522843" duration="2336000" />
-      <workItem from="1602107898624" duration="837000" />
+      <workItem from="1602107898624" duration="4665000" />
+      <workItem from="1602112759575" duration="28000" />
     </task>
     <servers />
   </component>
@@ -81,58 +99,58 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1602048032953" />
-    <state x="165" y="167" key="FileChooserDialogImpl" timestamp="1602048437387">
+    <state x="165" y="167" key="FileChooserDialogImpl" timestamp="1602112785397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="165" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602048437387" />
+    <state x="165" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602112785397" />
     <state x="206" y="211" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602021222301" />
     <state x="2195" y="211" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602021512200" />
-    <state width="1493" height="498" key="GridCell.Tab.0.bottom" timestamp="1602107944787">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1602112750554">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="498" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602107944787" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602112750554" />
     <state width="1877" height="530" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602102858583" />
     <state width="2517" height="530" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602028140977" />
-    <state width="1493" height="498" key="GridCell.Tab.0.center" timestamp="1602107944786">
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1602112750554">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="498" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602107944786" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602112750554" />
     <state width="1877" height="530" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602102858583" />
     <state width="2517" height="530" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602028140977" />
-    <state width="1493" height="498" key="GridCell.Tab.0.left" timestamp="1602107944786">
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1602112750553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="498" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602107944786" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602112750553" />
     <state width="1877" height="530" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602102858583" />
     <state width="2517" height="530" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602028140977" />
-    <state width="1493" height="498" key="GridCell.Tab.0.right" timestamp="1602107944787">
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1602112750554">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="498" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602107944787" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602112750554" />
     <state width="1877" height="530" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602102858583" />
     <state width="2517" height="530" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602028140977" />
-    <state width="2517" height="348" key="GridCell.Tab.1.bottom" timestamp="1602024525562">
-      <screen x="1920" y="0" width="2560" height="1040" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1602112750554">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601959860917" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602112750554" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602017815085" />
     <state width="2517" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602024525562" />
-    <state width="2517" height="348" key="GridCell.Tab.1.center" timestamp="1602024525562">
-      <screen x="1920" y="0" width="2560" height="1040" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1602112750554">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601959860917" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602112750554" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602017815085" />
     <state width="2517" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602024525562" />
-    <state width="2517" height="348" key="GridCell.Tab.1.left" timestamp="1602024525562">
-      <screen x="1920" y="0" width="2560" height="1040" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1602112750554">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601959860917" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602112750554" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602017815085" />
     <state width="2517" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602024525562" />
-    <state width="2517" height="348" key="GridCell.Tab.1.right" timestamp="1602024525562">
-      <screen x="1920" y="0" width="2560" height="1040" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1602112750554">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601959860917" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602112750554" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602017815085" />
     <state width="2517" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602024525562" />
     <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1602048469265">
@@ -143,9 +161,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.0.1536.824@0.0.1536.824" timestamp="1602048469265" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1602019600214">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="369" y="114" key="SettingsEditor" timestamp="1602111159832">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="369" y="114" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602111159832" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602019600214" />
     <state x="762" y="0" width="781" height="830" key="dock-window-1" timestamp="1602046341234">
       <screen x="0" y="0" width="1536" height="824" />
@@ -167,6 +186,8 @@
       <configuration name="CMakeRunConfiguration">
         <watch expression="memberCapacity" language="ObjectiveC" />
         <watch expression="bookCapacity" language="ObjectiveC" />
+        <watch expression="currentBook[0]" language="ObjectiveC" />
+        <watch expression="currentBook[0]" />
       </configuration>
     </watches-manager>
   </component>

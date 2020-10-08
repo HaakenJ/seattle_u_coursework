@@ -28,11 +28,11 @@ Member::Member(const Member &other) {
 }
 
 
-Member& Member::operator=(const Member &rhs) {
+Member &Member::operator=(const Member &rhs) {
     if (this != &rhs) {
 
         // Deallocate memory
-        delete [] this->memberArray;
+        delete[] this->memberArray;
 
         // Assign count and capacity from rhs
         this->capacity = rhs.capacity;
@@ -50,7 +50,7 @@ Member& Member::operator=(const Member &rhs) {
 }
 
 Member::~Member() {
-    delete [] memberArray;
+    delete[] memberArray;
 }
 
 int Member::addMember(std::string memberName) {
@@ -104,8 +104,7 @@ void Member::printAccount(int memberId) const {
         std::cout << memberArray[memberId].name;
         std::cout << " (account #: ";
         std::cout << memberArray[memberId].account << ")";
-    }
-    else {
+    } else {
         std::cout << "No such member found for member id: " << memberId;
     }
 }
@@ -139,7 +138,7 @@ void Member::resize() {
     }
 
     // Deallocate old memberArray
-    delete [] memberArray;
+    delete[] memberArray;
 
     // Reassign old array to new
     memberArray = temp;

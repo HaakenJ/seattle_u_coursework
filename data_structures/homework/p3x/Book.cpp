@@ -25,11 +25,11 @@ Book::Book(const Book &other) {
     }
 }
 
-Book& Book::operator=(const Book &rhs) {
+Book &Book::operator=(const Book &rhs) {
     if (this != &rhs) {
 
         // Deallocate memory
-        delete [] this->bookArray;
+        delete[] this->bookArray;
 
         // Assign count and capacity from rhs
         this->capacity = rhs.capacity;
@@ -47,10 +47,10 @@ Book& Book::operator=(const Book &rhs) {
 }
 
 Book::~Book() {
-    delete [] bookArray;
+    delete[] bookArray;
 }
 
-int Book::addBook(std:: string isbn, std::string author, std::string title,
+int Book::addBook(std::string isbn, std::string author, std::string title,
                   std::string year) {
     // Determine if resize is needed
     if (count >= capacity) {
@@ -104,8 +104,21 @@ void Book::resize() {
     }
 
     // Deallocate old bookArray
-    delete [] bookArray;
+    delete[] bookArray;
 
     // Reassign old array to new
     bookArray = temp;
 }
+
+std::string Book::getBookString(int bookId) const {
+    // Get the proper book's info from bookArray
+    BookInfo book = bookArray[bookId];
+
+    // Concatenate the info into a single string
+    std::string bookInfo = book.author + ", " +
+                           book.title + ", " +
+                           book.year;
+
+    return bookInfo;
+}
+

@@ -12,7 +12,7 @@ Rating::Rating(int initialBookCapacity) {
     bookCapacity = initialBookCapacity;
 
     // Allocate memory for 2D array
-    ratingArray = new int*[memberCapacity];
+    ratingArray = new int *[memberCapacity];
     for (int i = 0; i < memberCapacity; ++i) {
         ratingArray[i] = new int[bookCapacity];
     }
@@ -31,7 +31,7 @@ Rating::Rating(const Rating &other) {
     bookCapacity = other.bookCapacity;
 
     // Allocate memory with new capacity
-    ratingArray = new int*[memberCapacity];
+    ratingArray = new int *[memberCapacity];
     for (int i = 0; i < memberCapacity; ++i) {
         ratingArray[i] = new int[bookCapacity];
     }
@@ -55,7 +55,7 @@ Rating &Rating::operator=(const Rating &rhs) {
         this->memberCapacity = rhs.memberCapacity;
 
         // Allocate memory with new capacities
-        this->ratingArray = new int*[memberCapacity];
+        this->ratingArray = new int *[memberCapacity];
         for (int i = 0; i < memberCapacity; ++i) {
             ratingArray[i] = new int[bookCapacity];
         }
@@ -134,7 +134,7 @@ void Rating::resizeCol() {
     int newBookCapacity = bookCapacity * 2;
 
     // Create temp 2D array with new capacity
-    auto **temp = new int*[newBookCapacity];
+    auto **temp = new int *[newBookCapacity];
     for (int i = 0; i < memberCapacity; ++i) {
         temp[i] = new int[newBookCapacity];
     }
@@ -168,7 +168,7 @@ void Rating::resizeRow() {
     int newMemberCapacity = memberCapacity * 2;
 
     // Create temp 2D array with new capacity
-    auto **temp = new int*[newMemberCapacity];
+    auto **temp = new int *[newMemberCapacity];
     for (int i = 0; i < newMemberCapacity; ++i) {
         temp[i] = new int[bookCapacity];
     }
@@ -200,7 +200,7 @@ void Rating::resizeRow() {
 void Rating::clear() {
     // Cleanup ratingArray memory
     for (int i = 0; i < memberCapacity; ++i) {
-        delete [] ratingArray[i];
+        delete[] ratingArray[i];
     }
-    delete [] ratingArray;
+    delete[] ratingArray;
 }
