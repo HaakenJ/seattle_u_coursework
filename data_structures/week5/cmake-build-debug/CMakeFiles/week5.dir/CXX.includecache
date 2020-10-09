@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Haake/Documents/seattle_u_notes/data_structures/week5/IntBST.h
+
+D:/Haake/Documents/seattle_u_notes/data_structures/week5/main.cpp
+iostream
+-
+IntBST.h
+D:/Haake/Documents/seattle_u_notes/data_structures/week5/IntBST.h
+

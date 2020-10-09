@@ -12,28 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fac00395-f76f-4038-8b8a-92afcdfce4f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Book.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book.h" beforeDir="false" afterPath="$PROJECT_DIR$/Book.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Member.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Member.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rating.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Rating.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/Book.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/Book.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/Book.h" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/Book.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/Member.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/Member.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/Rating.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/Rating.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/p3.dir/Book.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/p3.dir/Book.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/p3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/p3.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/p3.dir/Driver.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/p3.dir/Driver.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/p3.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/p3.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/p3.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/cmake-build-debug/CMakeFiles/p3.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/cmake-build-debug/p3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/cmake-build-debug/p3.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p3x/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../p3x/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database_systems/homework/kjohnson_hw2.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database_systems/homework/kjohnson_hw2.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +41,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="p3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p3" TARGET_NAME="p3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p3" RUN_TARGET_NAME="p3">
@@ -92,6 +71,7 @@
       <workItem from="1602100522843" duration="2336000" />
       <workItem from="1602108999222" duration="896000" />
       <workItem from="1602112790967" duration="179000" />
+      <workItem from="1602207097317" duration="56000" />
     </task>
     <servers />
   </component>
@@ -103,10 +83,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1602048032953" />
-    <state x="165" y="167" key="FileChooserDialogImpl" timestamp="1602107894605">
+    <state x="165" y="167" key="FileChooserDialogImpl" timestamp="1602207148216">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="165" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602107894605" />
+    <state x="165" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602207148216" />
     <state x="206" y="211" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.2560.1040@0.0.1920.1040" timestamp="1602021222301" />
     <state x="2195" y="211" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602021512200" />
     <state width="1493" height="498" key="GridCell.Tab.0.bottom" timestamp="1602112670794">
