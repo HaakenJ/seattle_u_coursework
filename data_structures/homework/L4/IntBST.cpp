@@ -42,6 +42,10 @@ int IntBST::Node::findMax() const {
         return right->findMax();
 }
 
+bool IntBST::Node::isLeaf() const {
+    return false;
+}
+
 bool IntBST::has(Node *me, int key) {
     if (me == nullptr)
         return false; // not found
@@ -123,5 +127,17 @@ IntBST::Node *IntBST::copy(IntBST::Node *me) {
         return nullptr; // nothing to do
     else
         return new Node(me->key, copy(me->left), copy(me->right));
+}
+
+bool IntBST::empty() const {
+    return this->root == nullptr;
+}
+
+int IntBST::size() const {
+    return 0;
+}
+
+int IntBST::getLeafCount() const {
+    return 0;
 }
 

@@ -11,6 +11,11 @@ bool first_test() {
     string title = "first test: ";
 
     IntBST bsti;
+
+    cout << title << "Check if tree is empty" << endl;
+    if (!bsti.empty())
+        return false;
+
     cout << title << "check if empty tree has 1" << endl;
     if (bsti.has(1))
         return false;
@@ -19,6 +24,10 @@ bool first_test() {
     bsti.add(1);
     IntBST bst2(bsti);
     if (!bsti.has(1))
+        return false;
+
+    cout << title << "check if non-empty tree is empty" << endl;
+    if (bsti.empty())
         return false;
 
     cout << title << "remove 1 and check" << endl;
@@ -40,6 +49,7 @@ bool first_test() {
 }
 
 int main() {
+
     cout << (first_test() ? "passed" : "failed") << endl;
     return EXIT_SUCCESS;
 }

@@ -69,7 +69,7 @@ public:
     void remove(int key);
 
     /**
-     * Check if the set is empty
+     * Check if this set is empty
      *
      * @return true if empty, false if not
      */
