@@ -2,6 +2,10 @@
 // Created by Kevin Lundeen on 9/25/20
 // for Seattle University, CPSC 5005, Fall 2020
 //
+// Header file used by Kramer Johnson for
+// Project 3 in CPSC 5910 03 at Seattle University
+// Fall 2020
+//
 
 #pragma once
 
@@ -46,9 +50,9 @@ public:
     /**
      * Find the name of the given member.
      * @param memberId as returned by the addMember method
-     * @return
+     * @return member name or blank string if not found
      */
-    std::string findName(int memberId);
+    std::string findName(int memberId) const;
 
     /**
      * Login to account.
@@ -59,26 +63,27 @@ public:
 
     /**
      * Logout of account.
-     * @param memberName
+     * @param memberId to logout
+     * @return true if logged out successfully or false if no such member
      */
-    void logout(std::string memberName);
+    bool logout(int memberId);
 
     /**
      * Print to std::cout a line about the given member.
      * @param memberId as returned by the addMember method
      */
-    void printAccount(int memberId);
+    void printAccount(int memberId) const;
 
     /**
      * Print to std::cout the entire member list contents
      */
-    void print();
+    void print() const;
 
     /**
      * Get the cardinality of the list.
      * @return number of successful calls to add
      */
-    int size();
+    int size() const;
 
 private:
     static const int INITIAL_CAPACITY = 23;
