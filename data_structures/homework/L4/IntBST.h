@@ -68,6 +68,28 @@ public:
      */
     void remove(int key);
 
+    /**
+     * Check if the set is empty
+     *
+     * @return true if empty, false if not
+     */
+     bool empty() const;
+
+    /**
+     * Count the number of nodes in the set
+     *
+     * @return integer size of tree
+     */
+     int size() const;
+
+     /**
+      * Counts the number of leaves in the set
+      *
+      * @return integer representing total leaves
+      */
+      int getLeafCount() const;
+
+
 private:
     struct Node {
         int key;
@@ -86,6 +108,13 @@ private:
         * @return  key of the right-most node in this subtree
         */
         int findMax() const;
+
+        /**
+         * Determine if this node is a leaf
+         *
+         * @return true if this node is a leaf, false otherwise
+         */
+         bool isLeaf() const;
     };
 
     /**

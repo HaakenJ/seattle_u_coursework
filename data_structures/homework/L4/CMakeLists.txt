@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.17)
-project(Session5_IntBST)
+project(L4)
 
 set(CMAKE_CXX_STANDARD 14)
 
