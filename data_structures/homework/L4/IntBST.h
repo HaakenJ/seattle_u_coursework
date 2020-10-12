@@ -1,4 +1,10 @@
 //
+// empty(), size(), getLeafCount(), and isLeaf()
+// Created by Kramer Johnson on 10/12/20
+// Seattle University, CPSC 5910 03
+// lab 4
+//
+// remainder of code
 // Created by Kevin Lundeen on 10/7/20.
 // Seattle University, CPSC 5005
 //
@@ -73,21 +79,21 @@ public:
      *
      * @return true if empty, false if not
      */
-     bool empty() const;
+    bool empty() const;
 
     /**
      * Count the number of nodes in the set
      *
      * @return integer size of tree
      */
-     int size() const;
+    int size() const;
 
-     /**
-      * Counts the number of leaves in the set
-      *
-      * @return integer representing total leaves
-      */
-      int getLeafCount() const;
+    /**
+     * Counts the number of leaves in the set
+     *
+     * @return integer representing total leaves
+     */
+    int getLeafCount() const;
 
 
 private:
@@ -114,7 +120,7 @@ private:
          *
          * @return true if this node is a leaf, false otherwise
          */
-         bool isLeaf() const;
+        bool isLeaf() const;
     };
 
     /**
@@ -159,4 +165,18 @@ private:
      * @return   a fresh copy of the subtree
      */
     static Node *copy(Node *me);
+
+    /**
+     * Recursive helper method for size.
+     * @param me   sub-IntBST in which to count size
+     * @return     int size of the tree
+     */
+    static int size(Node *me);
+
+    /**
+     * Recursive helper method for getLeafCount.
+     * @param me   sub-IntBST in which to count leaves
+     * @return     int number of leaves in the tree
+     */
+    static int getLeafCount(Node *me);
 };

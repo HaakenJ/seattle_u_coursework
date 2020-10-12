@@ -1,4 +1,10 @@
 //
+// empty(), size(), getLeafCount(), and isLeaf()
+// Created by Kramer Johnson on 10/12/20
+// Seattle University, CPSC 5910 03
+// lab 4
+//
+// remainder of code
 // Created by Kevin Lundeen on 10/7/20.
 // Seattle University, CPSC 5005
 //
@@ -43,7 +49,10 @@ int IntBST::Node::findMax() const {
 }
 
 bool IntBST::Node::isLeaf() const {
-    return false;
+    if (left == nullptr && right == nullptr)
+        return true;
+    else
+        return false;
 }
 
 bool IntBST::has(Node *me, int key) {
@@ -130,14 +139,30 @@ IntBST::Node *IntBST::copy(IntBST::Node *me) {
 }
 
 bool IntBST::empty() const {
-    return this->root == nullptr;
+    return root == nullptr;
 }
 
 int IntBST::size() const {
-    return 0;
+    return size(root);
 }
 
 int IntBST::getLeafCount() const {
-    return 0;
+    return getLeafCount(root);
+}
+
+int IntBST::size(IntBST::Node *me) {
+    if (me == nullptr)
+        return 0;
+    else
+        return 1 + size(me->left) + size(me->right);
+}
+
+int IntBST::getLeafCount(IntBST::Node *me) {
+    if (me == nullptr)
+        return 0;
+    else if (me->isLeaf())
+        return 1;
+    else
+        return getLeafCount(me->left) + getLeafCount(me->right);
 }
 
