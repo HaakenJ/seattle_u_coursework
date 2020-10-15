@@ -5,6 +5,7 @@
 #ifndef L5_LINKEDLIST_H
 #define L5_LINKEDLIST_H
 
+#include <iostream>
 #include <string>
 
 template<class KeyType>
@@ -18,8 +19,13 @@ public:
 
     LinkedList &operator=(const LinkedList &rhs);
 
-    void add(const KeyType &item, std::string payload);
+    void add(const KeyType &key, const std::string &payload);
 
+    /**
+     * Returns the last negative value contained in the list
+     * @precon the list must contain at least one negative value
+     * @return the last negative value of type KeyType
+     */
     KeyType getLastNegative() const;
 
 private:
@@ -39,7 +45,10 @@ private:
 
     void clear();
     static ListElem *copy(ListElem *headToCopy);
+    static KeyType getLastNegative(ListElem *me, KeyType result);
 };
+
+
 
 template <class KeyType>
 LinkedList<KeyType>::LinkedList() {
@@ -84,6 +93,26 @@ typename LinkedList<KeyType>::ListElem *LinkedList<KeyType>::
         tail = tail->next;
     }
     return anchor.next;
+}
+
+template <class KeyType>
+void LinkedList<KeyType>::add(const KeyType &key, const std::string &payload) {
+    head = new ListElem(key, payload, head);
+}
+
+template <class KeyType>
+KeyType LinkedList<KeyType>::getLastNegative() const {
+    KeyType result = 0;
+    return getLastNegative(head, result);
+}
+
+template <class KeyType>
+KeyType LinkedList<KeyType>::getLastNegative(ListElem *me, KeyType result) {
+    if (me == nullptr)
+        return result;
+    else if (me->key < 0)
+        result = me->key;
+    return getLastNegative(me->next, result);
 }
 
 
