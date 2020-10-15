@@ -142,32 +142,32 @@ L5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\L5.dir\build.make CMakeFiles/L5.dir/build
 .PHONY : L5/fast
 
-main.obj: main.cpp.obj
+lab5.obj: lab5.cpp.obj
 
-.PHONY : main.obj
+.PHONY : lab5.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L5.dir\build.make CMakeFiles/L5.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+lab5.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L5.dir\build.make CMakeFiles/L5.dir/lab5.cpp.obj
+.PHONY : lab5.cpp.obj
 
-main.i: main.cpp.i
+lab5.i: lab5.cpp.i
 
-.PHONY : main.i
+.PHONY : lab5.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L5.dir\build.make CMakeFiles/L5.dir/main.cpp.i
-.PHONY : main.cpp.i
+lab5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L5.dir\build.make CMakeFiles/L5.dir/lab5.cpp.i
+.PHONY : lab5.cpp.i
 
-main.s: main.cpp.s
+lab5.s: lab5.cpp.s
 
-.PHONY : main.s
+.PHONY : lab5.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\L5.dir\build.make CMakeFiles/L5.dir/main.cpp.s
-.PHONY : main.cpp.s
+lab5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\L5.dir\build.make CMakeFiles/L5.dir/lab5.cpp.s
+.PHONY : lab5.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... L5
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... lab5.obj
+	@echo ... lab5.i
+	@echo ... lab5.s
 .PHONY : help
 
 

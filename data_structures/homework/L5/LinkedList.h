@@ -45,6 +45,13 @@ private:
 
     void clear();
     static ListElem *copy(ListElem *headToCopy);
+
+    /**
+     * Recursive helper function for getLastNegative()
+     * @param me     current list element
+     * @param result a KeyType variable to store a result if found
+     * @return       the KeyType value of the last negative element in the list
+     */
     static KeyType getLastNegative(ListElem *me, KeyType result);
 };
 
