@@ -15,9 +15,9 @@ public:
 
     ~LinkedList();
 
-    LinkedList(const LinkedList &other);
+    LinkedList(const LinkedList<KeyType> &other);
 
-    LinkedList &operator=(const LinkedList &rhs);
+    LinkedList<KeyType> &operator=(const LinkedList<KeyType> &rhs);
 
     void add(const KeyType &key, const std::string &payload);
 
@@ -68,12 +68,12 @@ LinkedList<KeyType>::~LinkedList() {
 }
 
 template <class KeyType>
-LinkedList<KeyType>::LinkedList(const LinkedList &other) {
+LinkedList<KeyType>::LinkedList(const LinkedList<KeyType> &other) {
     head = copy(other.head);
 }
 
 template <class KeyType>
-LinkedList<KeyType> & LinkedList<KeyType>::operator=(const LinkedList &rhs) {
+LinkedList<KeyType> & LinkedList<KeyType>::operator=(const LinkedList<KeyType> &rhs) {
     if (&rhs != this) {
         clear();
         head = copy(rhs.head);
