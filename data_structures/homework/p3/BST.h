@@ -201,6 +201,30 @@ private:
      * @return     int height of the tree
      */
     static int getHeight(Node *me);
+
+    /**
+     * Recursive helper method for getInOrderTraversal.
+     * @param me  sub-BST in which to traverse
+     * @param ss  a stringstream that contains the result
+     * @return    string representation of in-order set
+     */
+    static void getInOrderTraversal(Node *me, std::stringstream &ss);
+
+    /**
+     * Recursive helper method for getPreOrderTraversal.
+     * @param me  sub-BST in which to traverse
+     * @param ss  a stringstream that contains the result
+     * @return    string representation of in-order set
+     */
+    static void getPreOrderTraversal(Node *me, std::stringstream &ss);
+
+    /**
+     * Recursive helper method for getPostOrderTraversal.
+     * @param me  sub-BST in which to traverse
+     * @param ss  a stringstream that contains the result
+     * @return    string representation of in-order set
+     */
+    static void getPostOrderTraversal(Node *me, std::stringstream &ss);
 };
 
 template <class T>
@@ -387,5 +411,58 @@ int BST<T>::getHeight(BST::Node *me) {
         return 1 + std::max(getHeight(me->left), getHeight(me->right));
 }
 
+template<class T>
+std::string BST<T>::getInOrderTraversal() const {
+    std::stringstream ss;
+    getInOrderTraversal(root, ss);
+    return ss.str();
+}
+
+template<class T>
+void BST<T>::getInOrderTraversal(BST::Node *me, std::stringstream &ss) {
+    if (me != nullptr) {
+        getInOrderTraversal(me->left, ss);
+        ss << me->key << " ";
+        getInOrderTraversal(me->right, ss);
+    }
+    else
+        return;
+}
+
+template<class T>
+std::string BST<T>::getPreOrderTraversal() const {
+    std::stringstream ss;
+    getPreOrderTraversal(root, ss);
+    return ss.str();
+}
+
+template<class T>
+void BST<T>::getPreOrderTraversal(BST::Node *me, std::stringstream &ss) {
+    if (me != nullptr) {
+        ss << me->key << " ";
+        getPreOrderTraversal(me->left, ss);
+        getPreOrderTraversal(me->right, ss);
+    }
+    else
+        return;
+}
+
+template<class T>
+std::string BST<T>::getPostOrderTraversal() const {
+    std::stringstream ss;
+    getPostOrderTraversal(root, ss);
+    return ss.str();
+}
+
+template<class T>
+void BST<T>::getPostOrderTraversal(BST::Node *me, std::stringstream &ss) {
+    if (me != nullptr) {
+        getPostOrderTraversal(me->left, ss);
+        getPostOrderTraversal(me->right, ss);
+        ss << me->key << " ";
+    }
+    else
+        return;
+}
 
 #endif //P3_BST_H

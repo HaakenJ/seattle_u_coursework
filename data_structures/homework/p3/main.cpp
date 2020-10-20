@@ -107,14 +107,31 @@ int main() {
 //    cout << (first_test() ? "passed" : "failed") << endl;
 
     BST<string> bst;
+    BST<int> bst2;
 
-    bst.add("d");
-    bst.add("e");
-    bst.add("f");
-    bst.add("a");
+    bst.add("k");
     bst.add("g");
+    bst.add("q");
+    bst.add("i");
+    bst.add("a");
+    bst.add("l");
+    bst.add("r");
 
-    cout << bst.getHeight() << endl;
+    cout << bst.getInOrderTraversal() << endl;
+    cout << bst.getPreOrderTraversal() << endl;
+    cout << bst.getPostOrderTraversal() << endl;
+
+    bst2.add(4);
+    bst2.add(3);
+    bst2.add(1);
+    bst2.add(2);
+    bst2.add(6);
+    bst2.add(5);
+    bst2.add(7);
+
+    cout << bst2.getInOrderTraversal() << endl;
+    cout << bst2.getPreOrderTraversal() << endl;
+    cout << bst2.getPostOrderTraversal() << endl;
 
     return EXIT_SUCCESS;
 
