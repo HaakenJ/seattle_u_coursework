@@ -115,12 +115,11 @@ public:
 private:
     struct Node {
         T key;
-        std::string payload;
         Node *left;
         Node *right;
 
         // convenience ctor
-        Node(const T &newKey, Node *lch = nullptr, Node *rch = nullptr) {
+        explicit Node(const T &newKey, Node *lch = nullptr, Node *rch = nullptr) {
             key = newKey;
             left = lch;
             right = rch;
