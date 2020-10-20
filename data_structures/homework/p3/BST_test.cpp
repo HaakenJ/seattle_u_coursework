@@ -157,12 +157,80 @@ void integerBstTest() {
     testInsert(remAndInsrt, 8, bTree);
 }
 
+/**
+  * The main driver function to test a string binary search tree
+  */
+void stringBstTest() {
+
+    cout << "********************" << endl;
+    cout << "* test string BST  *" << endl;
+    cout << "********************" << endl;
+    cout << endl;
+
+    cout << "** CREATE BST **" << endl;
+
+    BST<string> bTree;
+
+    printTreeData(bTree);
+
+    cout << endl;
+    string filepath;
+    cout << "Enter string file: ";
+    cin >> filepath;
+    cout << endl;
+
+    string nextStr;
+    ifstream inFile;
+
+    // attempt to open file
+    inFile.open(filepath);
+
+    if (inFile.is_open()) {
+        cout << "** TEST INSERT **" << endl;
+        cout << "Inserting in this order: ";
+        // proceed while lines are being read from the file
+        while (getline(inFile, nextStr)) {
+            cout << nextStr << " ";
+
+            bTree.add(nextStr);
+        }
+        cout << endl;
+    } else {
+        // File name was invalid, exit application
+        cout << "ERROR: cannot open file";
+        return;
+    }
+
+    printTreeData(bTree);
+
+    cout << endl;
+    cout << "** TEST TRAVERSALS **" << endl;
+    printTraversals(bTree);
+
+    cout << endl;
+    cout << "** TEST CONTAINS **" << endl;
+    string hasStr[] = {"gene", "mary", "bea", "uma"};
+    string notHasStr[] = {"yan", "amy", "ron", "opal"};
+    testContains(hasStr, notHasStr, bTree, 4);
+
+    cout << endl;
+    cout << "** TEST REMOVE **" << endl;
+    string remAndInsrt[] = {"gene", "mary", "bea", "uma", "yan", "amy", "ron", "opal"};
+    testRemove(remAndInsrt, 8, bTree);
+
+    cout << endl;
+    cout << "** TEST INSERT (again) **" << endl;
+    testInsert(remAndInsrt, 8, bTree);
+}
+
 int main() {
     cout << "Welcome, this is Kramer Johnson's implementation " << endl;
     cout << "of a templated binary search tree!" << endl;
     cout << endl << endl;
 
     integerBstTest();
+    cout << endl << endl;
+    stringBstTest();
 
     return EXIT_SUCCESS;
 }

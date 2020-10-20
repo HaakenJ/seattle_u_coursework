@@ -1,5 +1,6 @@
 //
 // Created by Haake on 10/19/2020.
+// Seattle University 
 //
 
 #ifndef P3_BST_H
@@ -291,7 +292,6 @@ bool BST<T>::has(Node *me, const T &key) {
         return true;
 }
 
-// TODO - Adapt this and other comparing functions to handle string comparison
 template <class T>
 typename BST<T>::Node *BST<T>::add(Node *me, const T &newKey) {
     if (me == nullptr)
