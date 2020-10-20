@@ -1,3 +1,9 @@
+//
+// Created by Haake on 10/19/2020.
+// Seattle University CSPC 5910 03
+// P3
+//
+
 #include <iostream>
 #include <bits/stdc++.h>
 #include "BST.h"

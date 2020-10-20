@@ -1,6 +1,7 @@
 //
 // Created by Haake on 10/19/2020.
-// Seattle University 
+// Seattle University CSPC 5910 03
+// P3
 //
 
 #ifndef P3_BST_H
