@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/p3.dir/main.cpp.obj"
+  "CMakeFiles/p3.dir/BST_test.cpp.obj"
   "libp3.dll.a"
   "p3.exe"
   "p3.exe.manifest"

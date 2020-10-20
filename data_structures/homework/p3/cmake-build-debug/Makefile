@@ -142,32 +142,32 @@ p3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/build
 .PHONY : p3/fast
 
-main.obj: main.cpp.obj
+BST_test.obj: BST_test.cpp.obj
 
-.PHONY : main.obj
+.PHONY : BST_test.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+BST_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/BST_test.cpp.obj
+.PHONY : BST_test.cpp.obj
 
-main.i: main.cpp.i
+BST_test.i: BST_test.cpp.i
 
-.PHONY : main.i
+.PHONY : BST_test.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/main.cpp.i
-.PHONY : main.cpp.i
+BST_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/BST_test.cpp.i
+.PHONY : BST_test.cpp.i
 
-main.s: main.cpp.s
+BST_test.s: BST_test.cpp.s
 
-.PHONY : main.s
+.PHONY : BST_test.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/main.cpp.s
-.PHONY : main.cpp.s
+BST_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p3.dir\build.make CMakeFiles/p3.dir/BST_test.cpp.s
+.PHONY : BST_test.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... p3
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... BST_test.obj
+	@echo ... BST_test.i
+	@echo ... BST_test.s
 .PHONY : help
 
 

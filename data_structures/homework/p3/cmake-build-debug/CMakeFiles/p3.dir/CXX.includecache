@@ -12,8 +12,10 @@ iostream
 sstream
 -
 
-D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/main.cpp
+D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/BST_test.cpp
 iostream
+-
+bits/stdc++.h
 -
 BST.h
 D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/BST.h
