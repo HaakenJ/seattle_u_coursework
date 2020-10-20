@@ -113,6 +113,7 @@ bool first_test() {
 }
 
 int main() {
+
     cout << (first_test() ? "passed" : "failed") << endl;
     return EXIT_SUCCESS;
 }
