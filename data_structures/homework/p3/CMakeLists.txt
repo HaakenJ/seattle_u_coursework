@@ -3,4 +3,4 @@ project(p3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(p3 BST_test.cpp BST.h)
+add_executable(p3 p3.cpp BST.h)

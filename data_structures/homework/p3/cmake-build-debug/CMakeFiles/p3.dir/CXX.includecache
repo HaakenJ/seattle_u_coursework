@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/BST.h
+D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/BST.h
 iostream
 -
 sstream
 -
 
-C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/BST_test.cpp
+D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/BST_test.cpp
 iostream
 -
 bits/stdc++.h
 -
 BST.h
-C:/Users/kjohnson/Desktop/Kramer/seattle_u_notes/data_structures/homework/p3/BST.h
+D:/Haake/Documents/seattle_u_notes/data_structures/homework/p3/BST.h
 
