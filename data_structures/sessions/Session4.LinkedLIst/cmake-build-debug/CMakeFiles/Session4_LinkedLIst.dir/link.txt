@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Session4_LinkedLIst.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\ar.exe cr CMakeFiles\Session4_LinkedLIst.dir/objects.a @CMakeFiles\Session4_LinkedLIst.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\Session4_LinkedLIst.dir/objects.a -Wl,--no-whole-archive  -o Session4_LinkedLIst.exe -Wl,--out-implib,libSession4_LinkedLIst.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Session4_LinkedLIst.dir\linklibs.rsp

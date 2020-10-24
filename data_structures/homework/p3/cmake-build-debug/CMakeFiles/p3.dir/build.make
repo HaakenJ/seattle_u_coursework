@@ -76,27 +76,27 @@ include CMakeFiles/p3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/p3.dir/flags.make
 
-CMakeFiles/p3.dir/BST_test.cpp.obj: CMakeFiles/p3.dir/flags.make
-CMakeFiles/p3.dir/BST_test.cpp.obj: ../BST_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\p3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/p3.dir/BST_test.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\p3.dir\BST_test.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\p3\BST_test.cpp
+CMakeFiles/p3.dir/p3.cpp.obj: CMakeFiles/p3.dir/flags.make
+CMakeFiles/p3.dir/p3.cpp.obj: ../p3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Haake\Documents\seattle_u_notes\data_structures\homework\p3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/p3.dir/p3.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\p3.dir\p3.cpp.obj -c D:\Haake\Documents\seattle_u_notes\data_structures\homework\p3\p3.cpp
 
-CMakeFiles/p3.dir/BST_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/p3.dir/BST_test.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\p3\BST_test.cpp > CMakeFiles\p3.dir\BST_test.cpp.i
+CMakeFiles/p3.dir/p3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/p3.dir/p3.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Haake\Documents\seattle_u_notes\data_structures\homework\p3\p3.cpp > CMakeFiles\p3.dir\p3.cpp.i
 
-CMakeFiles/p3.dir/BST_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/p3.dir/BST_test.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\p3\BST_test.cpp -o CMakeFiles\p3.dir\BST_test.cpp.s
+CMakeFiles/p3.dir/p3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/p3.dir/p3.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Haake\Documents\seattle_u_notes\data_structures\homework\p3\p3.cpp -o CMakeFiles\p3.dir\p3.cpp.s
 
 # Object files for target p3
 p3_OBJECTS = \
-"CMakeFiles/p3.dir/BST_test.cpp.obj"
+"CMakeFiles/p3.dir/p3.cpp.obj"
 
 # External object files for target p3
 p3_EXTERNAL_OBJECTS =
 
-p3.exe: CMakeFiles/p3.dir/BST_test.cpp.obj
+p3.exe: CMakeFiles/p3.dir/p3.cpp.obj
 p3.exe: CMakeFiles/p3.dir/build.make
 p3.exe: CMakeFiles/p3.dir/linklibs.rsp
 p3.exe: CMakeFiles/p3.dir/objects1.rsp
