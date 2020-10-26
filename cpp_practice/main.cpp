@@ -17,7 +17,19 @@ void writeBlock(char c, int n, int m) {
     }
 }
 
+int getMax(int *arr, int start, int end) {
+    if (start == end)
+        return arr[start];
+    else {
+        int mid = (start + end) / 2;
+        int left = getMax(arr, start, mid);
+        int right = getMax(arr, mid + 1, end);
+        return (left > right ? left : right);
+    }
+}
+
 int main() {
-    writeBlock('*', 5, 3);
+    int arr[] = {1, 3, 22, 56, 100, 5, 3};
+    cout << getMax(arr, 0, 6);
     return 0;
 }
